@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <!-- Suchmaschinen such begriffe  -->
+    <meta name="description" content="Dev" />
+    <!-- Beschreibung bei safari  -->
+
+    <meta name="theme-color" content="" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <title>EmilGerlach | Dev</title>
+    <link rel="stylesheet" href="../static/css/styles.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../static/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../static/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../static/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../static/favicon_io/site.webmanifest" />
+  </head>
+
+  <body>
+    <div class="navbar" id="navbar">
+      <div>
+        <h1 class="mini-heading">Dev</h1>
+      </div>
+      <div
+        id="lightmode-darkmode-btn"
+        class="lightmode-darkmode-btn"
+        alt="lightmode/darkmode btn"
+        title="switch between darkmode and lightmode"
+        onclick="toggleDarkMode()"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+          />
+        </svg>
+      </div>
+      <div id="homeLink" class="home-btn" alt="home btn" title="home">
+        <a href="https://emilgerlach.com">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="dropdown">
+        <btn class="dropbtn" id="dropbtn" alt="dropdown btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </btn>
+        <div class="dropdown-content" id="dropdown-content">
+          <a href="#dev-meaning">Meaning of 'Dev'</a>
+          <a href="#technical-terms">Technical Terms in Dev</a>
+          <div class="dropdown-special-content">
+            <a href="/blog">My Blog</a>
+            <a href="/dev/probability-calculator">Probability Calculator</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="descr-text-dev">
+      This is my subpage about Dev. Here, you'll find technical terms, concepts,
+      and much more to development.
+    </div>
+    <div class="text">
+      <div class="sub-heading">
+        <h2 id="dev-meaning">What Does 'Dev' Mean?</h2>
+      </div>
+      'Dev' is short for 'Development' or 'Developer.' When you develop
+      something, you create software or digital solutions.<br />
+      You can also say 'programming' or 'coding'. <br /><br />
+      But how to start?<br />
+      I highly recommend learning programming with
+      <a href="https://developer.apple.com/swift-playgrounds/" target="_blank"
+        >Swift Playgrounds
+      </a>
+      . It’s a great tool for learning the basics of programming, offering a
+      strong foundation and being really useful for simple logic-based coding.
+    </div>
+
+    <div class="text">
+      <div class="sub-heading">
+        <h2 id="technical terms">other important technical terms in dev</h2>
+      </div>
+      In the world of development, there are several key technical terms. I will
+      try to explain some of them briefly.
+      <div class="terms-div">
+        <div class="term">
+          <strong>Algorithm:</strong><br />
+          A step-by-step procedure for solving a problem or completing a task.
+        </div>
+        <div class="term">
+          <strong>Data Structure:</strong><br />
+          A method for efficiently storing and organizing data, such as arrays,
+          lists, stacks, or queues.
+        </div>
+        <div class="term">
+          <strong>Variables, Functions, Loops, and Error Handling:</strong
+          ><br />
+          Fundamental concepts in programming that involve storing data
+          (variables), creating reusable code blocks (functions), repeating
+          actions (loops), and managing errors or unexpected situations in the
+          code (error handling).
+        </div>
+        <div class="term">
+          <strong>Debugging:</strong><br />
+          The process of finding and fixing bugs or errors in the code.
+        </div>
+        <div class="term">
+          <strong>API (Application Programming Interface):</strong><br />
+          A set of functions and protocols that allows software to communicate
+          with each other.
+        </div>
+        <div class="term">
+          <strong>Version Control:</strong><br />
+          A system like Git that allows developers to track changes to their
+          code and collaborate with others.
+        </div>
+        <div class="term">
+          <strong>Framework:</strong><br />
+          A collection of pre-written code and best practices that help
+          developers build applications faster.
+        </div>
+        <div class="term">
+          <strong>IDE (Integrated Development Environment):</strong><br />
+          A software application for developers to to write, test, and debug
+          code. A popular IDE is Visual Studio Code.
+        </div>
+        <div class="term">
+          <strong>Database:</strong><br />
+          A structured system for storing and managing data, often using
+          languages like SQL to query and manipulate the data.
+        </div>
+        <div class="term">
+          <strong>Cloud Computing:</strong><br />
+          The delivery of computing services (such as storage, processing, and
+          databases) over the internet, allowing for scalability and
+          flexibility.
+        </div>
+        <div class="term">
+          <strong>IDE (Integrated Development Environment):</strong><br />
+          A software application for developers to to write, test, and debug
+          code. A popular IDE is Visual Studio Code.
+        </div>
+      </div>
+      These terms are important, in my opinion, for starting to learn
+      programming.
+    </div>
+
+    <!-- <div class="text">
+      <div class="sub-heading">
+        <h2 id="my-projects">My projects you can test</h2>
+      </div>
+      These are 2 projects/tools in this Website, die du nutzten kannst.<br />
+
+      1. Probability Calculator  <br /><br />
+      2. Mini-Ai <br /><br />
+    </div> -->
+
+    <div class="legal-content">
+      <span class="legal-text">
+        designed and developed by Emil Gerlach.
+        <div class="legal-text-things">
+          &copy; 2025 Emil Gerlach |
+          <a href="https://emilgerlach.com/">emilgerlach.com</a><br />
+          <a href="#">up</a>
+        </div>
+        <div class="disclaimer">
+          Despite careful content control, I assume no liability for the content
+          of external links. The operators of the linked pages are solely
+          responsible for their content.
+        </div>
+      </span>
+    </div>
+    <script src="../static/js/main.js" defer></script>
+  </body>
+</html>

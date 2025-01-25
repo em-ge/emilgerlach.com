@@ -1,0 +1,5 @@
+Host dev
+	HostName 94.130.107.104
+	User emil
+	Port 722
+    IdentityFile ~/.ssh/id_ed25519

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <!-- Suchmaschinen such begriffe  -->
+    <meta name="description" content="Emil Gerlach" />
+    <!-- Beschreibung bei safari  -->
+
+    <meta name="theme-color" content="" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <title>Emil Gerlach</title>
+    <link rel="stylesheet" href="../static/css/styles.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/favicons/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/favicons/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/favicons/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../static/favicons/favicon_io/site.webmanifest">
+
+  <body>
+    <div class="navbar" id="navbar"> 
+      <div>
+        <h1>Emil Gerlach</h1> 
+      </div>
+      <div id="lightmode-darkmode-btn" class="lightmode-darkmode-btn" alt="lightmode/darkmode btn" title="switch between darkmode and lightmode" onclick="toggleDarkMode()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+        </svg>        
+      </div>
+      <div id="homeLink" class="home-btn" alt="home btn" title="home">
+        <a href="https://emilgerlach.com">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+          </svg>  
+        </a>        
+      </div>
+      <div class="dropdown">
+        <btn class="dropbtn" id="dropbtn" alt="dropdown btn">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </btn>
+        <div class="dropdown-content" id="dropdown-content">
+          <a href="#about-emil">about me</a>
+          <a href="#about-website">about this Website</a>
+          <a href="#contact">Contact</a>
+          <a href="#find-me">Find me here also</a>
+          <div class="dropdown-special-content">
+            <a href="/blog">My Blog</a>
+            <a href="/dev">Dev</a>
+            <a href="/dev/probability-calculator">Probability Calculator</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="descr-text-home">
+      Hi, I'm Emil, and I'm a self-taught hobbyist developer from Germany. Most of the time, I call myself 'em-ge' online.<br/>
+      Welcome to my website where I share my projects, articles and blogs. <br/>
+    </div>
+
+    <div class="text">
+      <div class="sub-heading">
+        <h2 id="about-emil">about me</h2>
+      </div>
+      In 2023, I started learning to code as a teenager using Swift Playgrounds.
+      By now, I've tried a bit of everything (Python, Godot, HTML, CSS, JavaScript, Pygame, Flask, Strudel, Swift, Go). I'm still learning a  bit of everything.<br/>
+      I only code as a hobby for fun in my free time, so I'm definitely not professional.<br/>
+      Beyond coding, history fascinates me. <br/>
+      Music is another passion of mine — I enjoy both listening and creating (with my Guitar + Akai MPK mini + GarageBand). 
+      Occasionally, I play low-elo <a href="https://www.chess.com/member/em-ge" target="_blank">chess</a> and <a href="https://www.aoe2insights.com/user/13091349/" target="_blank">AoE2</a> at a noob level.
+    </div>
+
+    <div class="text">
+      <div class="sub-heading">
+        <h2 id="about-website">about this Website</h2>
+      </div>
+      This website first went online in April 2024 and was my first big project.<br/>
+      The prototype of this website was built using a Flask web server. The site still runs on Flask.<br/>
+
+      <!-- Here are some photos about the history of this website. <br/> --> 
+      I work daily to improve this website, so please forgive any errors or other issues that may arise.
+    </div>
+
+    <!-- 
+    <div class="text">
+      <div class="sub-heading">
+        <h2 id="contact">Contact</h2>
+      </div>
+      I have successfully completed these jobs:
+      2024: 
+      2025
+    </div> 
+    -->
+
+    <div class="text">
+      <div class="sub-heading">
+        <h2 id="contact">contact</h2>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="mail-contact" title="send a mail to: info@emilgerlach.com">
+        <div class="mail-contact-img">
+          <a href="mailto:info@emilgerlach.com" >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+          </a>
+        </div>
+        <div>
+          <a href="mailto:info@emilgerlach.com">info@emilgerlach.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text">
+      <div class="sub-heading">
+        <h2 id="find-me">find me here also:</h2>
+      </div>
+    </div>
+    <div class="find-me">
+      <div class="github-contact" title="github: em-ge">
+        <div class="github-contact-img">
+          <a href="https://github.com/em-ge" target="_blank">
+            <svg version="1.1" viewBox="0 0 16 16">\
+              <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+            </svg>
+          </a>
+        </div>
+        <div>
+          <a href="https://github.com/em-ge" target="_blank">em-ge</a>
+        </div>
+      </div>
+      
+      <!-- <div class="soundcloud-contact">
+        <div class="soundcloud-contact-img">
+          <a href="https://soundcloud.com/" target="_blank">
+            <svg height="200px" width="200px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 291.319 291.319" xml:space="preserve" fill="#000000"><g stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g> <g> <path style="fill:#FF7700;" d="M72.83,218.485h18.207V103.832c-6.828,1.93-12.982,5.435-18.207,10.041 C72.83,113.874,72.83,218.485,72.83,218.485z M36.415,140.921v77.436l1.174,0.127h17.033v-77.682H37.589 C37.589,140.803,36.415,140.921,36.415,140.921z M0,179.63c0,14.102,7.338,26.328,18.207,33.147V146.52 C7.338,153.329,0,165.556,0,179.63z M109.245,218.485h18.207v-109.6c-5.444-3.396-11.607-5.635-18.207-6.5V218.485z M253.73,140.803h-10.242c0.519-3.168,0.847-6.382,0.847-9.705c0-32.182-25.245-58.264-56.388-58.264 c-16.896,0-31.954,7.775-42.287,19.955v125.695h108.07c20.747,0,37.589-17.388,37.589-38.855 C291.319,158.182,274.477,140.803,253.73,140.803z"></path> </g> </g></svg>         
+          </a>
+        </div>
+        <div>
+          <a href="https://soundcloud.com/" target="_blank">emilgerlach</a>
+        </div>
+      </div> -->
+    </div> 
+
+    <div class="legal-content">
+      <span class="legal-text">
+        designed and developed by Emil Gerlach.
+        <div class="legal-text-things">
+          &copy; 2025 Emil Gerlach<br/>
+          <a href="#">up</a> 
+        </div>
+        <div class="disclaimer">Despite careful content control, I assume no liability for the content of external links. <br/>The operators of the linked pages are solely responsible for their content.</div>
+      </span>
+    </div>
+
+    <script src="../static/js/main.js" defer></script>
+  </body>
+</html>
