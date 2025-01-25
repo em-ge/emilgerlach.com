@@ -398,7 +398,7 @@ a:hover {
   line-height: 1.4;
 }
 
-.prob-calc {
+/* .prob-calc {
   margin-top: 1%;
   margin-bottom: 2em;
   padding: 0.7em;
@@ -521,7 +521,7 @@ a:hover {
   margin-top: 0.7em;
   padding-top: 0.5em;
   border-top: 2px solid dimgrey;
-}
+}  */
 
 .blog-ending {
   display: flex;
