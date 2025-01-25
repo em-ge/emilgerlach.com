@@ -1,29 +1,29 @@
-let counter = 1;
+// let counter = 1;
 
-function addInput() {
-  counter++; //${counter}
+// function addInput() {
+//   counter++; //${counter}
 
-  var newdiv = document.createElement("div");
+//   var newdiv = document.createElement("div");
 
-  newdiv.innerHTML = `<form method="POST" action="/dev/probability-calculator" id="input-boxes">
-            <label class="prob-calc-label" for="number${counter}">Event: 
-                <textarea id="probCalcTextarea" oninput="autoResizeWidth(this)"rows="1" cols="1" class="prob-calc-textarea">${counter}</textarea>
-            </label>
-            <input class="prob-calc-input" type="number" id="number${counter}" name="number${counter}" required>
-        </form>`;
+//   newdiv.innerHTML = `<form method="POST" action="/dev/probability-calculator" id="input-boxes">
+//             <label class="prob-calc-label" for="number${counter}">Event: 
+//                 <textarea id="probCalcTextarea" oninput="autoResizeWidth(this)"rows="1" cols="1" class="prob-calc-textarea">${counter}</textarea>
+//             </label>
+//             <input class="prob-calc-input" type="number" id="number${counter}" name="number${counter}" required>
+//         </form>`;
 
-  document.getElementById("input-boxes").appendChild(newdiv);
-}
+//   document.getElementById("input-boxes").appendChild(newdiv);
+// }
 
-function removeInput() {
-  const forms = document.querySelectorAll(".prob-calc form");
+// function removeInput() {
+//   const forms = document.querySelectorAll(".prob-calc form");
 
-  if (forms.length > 1) {
-    forms[forms.length - 1].remove();
+//   if (forms.length > 1) {
+//     forms[forms.length - 1].remove();
 
-    counter = counter - 1;
-  }
-}
+//     counter = counter - 1;
+//   }
+// }
 
 function autoResizeWidth(textarea) {
   const minWidth = 10;
