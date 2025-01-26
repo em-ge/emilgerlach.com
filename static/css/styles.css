@@ -58,7 +58,7 @@ a:hover {
 }
 
 [id] {
-  scroll-margin-top: 170px;
+  scroll-margin-top: 3.8em;
 }
 
 .navbar {
@@ -555,8 +555,8 @@ a:hover {
 @media (max-width: 500px) {
   /* font-size: 4 less */
   body {
-    margin-left: 8px;
-    margin-right: 5px;
+    margin-left: 1em;
+    margin-right: 1em;
     line-height: 1.5;
     font-size: 17px;
   }
@@ -575,7 +575,7 @@ a:hover {
   }
 
   [id] {
-    scroll-margin-top: 200px;
+    scroll-margin-top: 5.3em;
   }
 
   .navbar {
@@ -589,8 +589,8 @@ a:hover {
   }
 
   .lightmode-darkmode-btn {
-    width: 2.4em;
-    height: 2.4em;
+    width: 3em;
+    height: 3em;
   }
 
   .lightmode-darkmode-btn:hover {
@@ -600,13 +600,8 @@ a:hover {
   }
 
   .home-btn {
-    width: 2.7em;
-    height: 2.7em;
-  }
-
-  .home-btn-family {
-    width: 4.5em;
-    height: 2.5em;
+    width: 2.8em;
+    height: 2.8em;
   }
 
   .home-btn a:hover {
@@ -615,8 +610,8 @@ a:hover {
   }
 
   .dropbtn {
-    width: 2.4em;
-    height: 2.4em;
+    width: 2.7em;
+    height: 2.7em;
     margin-right: 0.5vw;
   }
 
@@ -668,7 +663,7 @@ a:hover {
   }
 
   .text {
-    margin-top: -1em;
+    margin-top: -0.7em;
     margin-bottom: 0.3em;
   }
 
