@@ -6,7 +6,7 @@
 //   var newdiv = document.createElement("div");
 
 //   newdiv.innerHTML = `<form method="POST" action="/dev/probability-calculator" id="input-boxes">
-//             <label class="prob-calc-label" for="number${counter}">Event: 
+//             <label class="prob-calc-label" for="number${counter}">Event:
 //                 <textarea id="probCalcTextarea" oninput="autoResizeWidth(this)"rows="1" cols="1" class="prob-calc-textarea">${counter}</textarea>
 //             </label>
 //             <input class="prob-calc-input" type="number" id="number${counter}" name="number${counter}" required>
@@ -51,6 +51,31 @@ function adjustInputWidth(input) {
 }
 
 let lightmode = true;
+
+function isMobile() {
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+  return /android|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(
+    userAgent
+  );
+}
+
+function toggleDropBtn() {
+  if (isMobile()) {
+    //FIXME:
+    const element = document.getElementById("dropdown-content");
+
+    if (element.style.display === "none") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+    element.addEventListener("click", () => {
+      element.style.display = "none";
+      document.getElementById("dropbtn").style.color = "var(--btn-color)";
+    });
+  }
+}
 
 function toggleDarkMode() {
   if (lightmode === true) {
