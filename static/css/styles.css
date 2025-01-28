@@ -144,6 +144,7 @@ a:hover {
   border: 2.5px solid dimgrey;
   min-width: 15em;
   margin-top: 3em;
+  margin-right: 1.3em;
 }
 
 .dropdown-content a {
@@ -215,6 +216,11 @@ a:hover {
 .descr-text-long-heading {
   margin-bottom: 1.5em;
   margin-top: 6em;
+}
+
+.descr-text-errorpage {
+  margin-top: 13em;
+  text-align: center;
 }
 
 .sub-heading {
@@ -622,6 +628,7 @@ a:hover {
 
   .dropdown-content {
     width: 100%;
+    margin-right: 0.9em;
   }
 
   .dropdown-content a {
@@ -660,6 +667,10 @@ a:hover {
   .descr-text-long-heading {
     margin-bottom: 1.5em;
     margin-top: 8.2em;
+  }
+
+  .descr-text-errorpage {
+    margin-top: 10em;
   }
 
   .text {
