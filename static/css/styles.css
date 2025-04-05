@@ -53,6 +53,18 @@ a:hover {
   color: royalblue;
 }
 
+nav {
+  height: 60px;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav svg {
+  fill: var(--text-color);
+}
+
 ::selection {
   background-color: var(--select-background-color);
   color: var(--select-color);
@@ -121,12 +133,13 @@ a:hover {
   opacity: 1;
 }
 
-.dropdown {
-  position: relative;
-  display: flex;
+.close-sidebar-btn {
+  padding-top: 1em;
+  padding-left: 2em;
+  display: block;
 }
 
-.dropbtn {
+.open-sidebar-btn {
   color: var(--btn-color);
   width: 3em;
   height: 3em;
@@ -139,46 +152,60 @@ a:hover {
   opacity: 0.57;
 }
 
-.dropdown-content {
-  background-color: var(--background-color);
-  display: none;
-  border: 2.5px solid dimgrey;
-  min-width: 15em;
-  margin-top: 3em;
-  margin-right: 1.3em;
-}
-
-.dropdown-content a {
-  font-size: 25px;
-  padding: 0.2em;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  color: royalblue;
-  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.19), 0 -6px 6px 0 rgba(0, 0, 0, 0.19);
-}
-
-.dropdown:hover .dropdown-content,
-.dropdown-content:hover .dropdown-content {
-  display: block;
-  transform: scale(1.05);
-  border: 2px solid dimgrey;
-  position: absolute;
-  right: 0;
-  /* margin-top: 0.8em; */
-}
-
-.dropdown:hover .dropbtn {
-  display: block;
+.open-sidebar-btn:hover {
   transform: scale(1.05);
   color: royalblue;
   opacity: 1;
 }
 
-.dropdown-special-content {
-  border-top: 2.5px solid dimgrey;
+.links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 10;
+  width: 17em;
+  height: 100%;
+  background-color: var(--background-color);
+  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+  transition: 0.6s ease-out;
+}
+
+.links-container a {
+  white-space: nowrap;
+  align-items: center;
+  text-decoration: none;
+  padding-left: 1.5em;
+  padding-right: 100%;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+.links-container a:hover {
+  background-color: var(--select-background-color);
+}
+
+.sidebar-special-content {
+  padding-top: 1.5em;
+}
+
+#sidebar-active {
+  display: none;
+}
+
+#sidebar-active:checked ~ .links-container {
+  right: 0;
+}
+
+#sidebar-active:checked ~ #overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
 }
 
 .gerlach-wappen-img {
@@ -640,35 +667,6 @@ a:hover {
     color: var(--btn-color);
   }
 
-  .dropbtn {
-    width: 2.7em;
-    height: 2.7em;
-    margin-right: 0.5vw;
-  }
-
-  .dropbtn:hover {
-    color: var(--btn-color);
-    opacity: 0.57;
-  }
-
-  .dropdown-content {
-    width: 100%;
-    margin-right: 0.9em;
-  }
-
-  .dropdown-content a {
-    font-size: 22px;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-    transform: scale(1.05);
-    border: 2px solid dimgrey;
-    position: absolute;
-    right: 0;
-    /* margin-top: 0.8em; */
-  }
-
   .descr-text-home {
     margin-bottom: 1.5em;
     margin-top: 8.7em;
@@ -752,47 +750,16 @@ a:hover {
   }
 }
 
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  justify-content: center;
-  align-items: center;
+/* .div {
+  filter: blur(0px);
+  animation: blurIn 3s forwards;
 }
 
-.modal {
-  background-color: #fff;
-  padding: 1.5em;
-  width: 100%;
-  max-width: 500px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  position: relative;
-  text-align: center;
-  color: royalblue;
-  border: 3.5px solid dimgrey;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.close-btn {
-  position: absolute;
-  justify-content: center;
-  background-color: transparent;
-  border: 2px solid dimgrey;
-  cursor: pointer;
-  padding: 10px;
-  margin: 30px;
-  color: dimgrey;
-}
-
-.open-modal-btn {
-  padding: 0.5em 1em;
-  cursor: pointer;
-}
+@keyframes blurIn {
+  from {
+    filter: blur(0px);
+  }
+  to {
+    filter: blur(10px);
+  }
+} */
