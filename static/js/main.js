@@ -60,23 +60,6 @@ function isMobile() {
   );
 }
 
-function toggleDropBtn() {
-  if (isMobile()) {
-    //FIXME:
-    const element = document.getElementById("dropdown-content");
-
-    if (element.style.display === "none") {
-      element.style.display = "block";
-    } else {
-      element.style.display = "none";
-    }
-    element.addEventListener("click", () => {
-      element.style.display = "none";
-      document.getElementById("dropbtn").style.color = "var(--btn-color)";
-    });
-  }
-}
-
 function toggleDarkMode() {
   if (lightmode === true) {
     // turn on Darkmode
