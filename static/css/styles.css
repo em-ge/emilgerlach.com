@@ -65,6 +65,15 @@ nav svg {
   fill: var(--text-color);
 }
 
+blockquote {
+  text-align: center;
+  font-style: italic;
+  color: royalblue;
+  font-family: "Courier New", monospace;
+  line-height: 1.4;
+  font-size: 20px;
+}
+
 ::selection {
   background-color: var(--select-background-color);
   color: var(--select-color);
@@ -188,7 +197,13 @@ nav svg {
 }
 
 .sidebar-special-content {
+  display: flex;
+  flex-direction: column;
   padding-top: 1.5em;
+}
+
+.sidebar-special-content a {
+  padding-right: 300%;
 }
 
 #sidebar-active {
