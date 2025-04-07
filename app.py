@@ -29,6 +29,11 @@ def article_grenzen_schmuck_und_uhrenindustrie_in_pf():
     return render_template("index_grenzen_schmuck_und_uhrenindustrie_in_pf.html")
 
 
+@app.route("/blog/portus-wie-die-roemer-wohnten")
+def article_portus_wie_die_roemer_wohnten():
+    return render_template("index_portus_wie_die_roemer_wohnten.html")
+
+
 @app.route("/dev")
 def dev():
     return render_template(
