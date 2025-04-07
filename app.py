@@ -24,6 +24,11 @@ def article_strudel():
     return render_template("index_strudel.html")
 
 
+@app.route("/blog/grenzen-schmuck-und-uhrenindustrie-in-pf")
+def article_grenzen_schmuck_und_uhrenindustrie_in_pf():
+    return render_template("index_grenzen_schmuck_und_uhrenindustrie_in_pf.html")
+
+
 @app.route("/dev")
 def dev():
     return render_template(
