@@ -25,6 +25,17 @@
 //   }
 // }
 
+window.addEventListener("scroll", function () {
+  const fadeInTexts = document.querySelectorAll(".fade-in-text");
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition > 10) {
+    fadeInTexts.forEach(function (el) {
+      el.style.opacity = 1;
+    });
+  }
+});
+
 function autoResizeWidth(textarea) {
   const minWidth = 10;
   const maxWidth = window.innerWidth * 0.5;
