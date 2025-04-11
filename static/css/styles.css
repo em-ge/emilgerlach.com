@@ -10,8 +10,8 @@
 
 body {
   padding-inline: 1em;
-  margin-left: 4em;
-  margin-right: 4em;
+  margin-left: 5em;
+  margin-right: 5em;
   margin-top: 0px;
   margin-bottom: 0px;
   font-family: "Helvetica", "Arial", sans-serif;
@@ -29,12 +29,12 @@ body {
 h1 {
   color: royalblue;
   line-height: 1;
-  font-size: 50px;
+  font-size: 45px;
   text-align: center;
   margin-block-start: 0em;
   margin-block-end: 0em;
-  margin-top: 3em;
-  margin-bottom: 1em;
+  margin-top: 4em;
+  margin-bottom: 0.5em;
 }
 
 h2 {
@@ -82,6 +82,13 @@ blockquote {
   font-size: 20px;
 }
 
+button:focus,
+a:focus {
+  outline: 2px solid royalblue;
+  outline-offset: 0.15em;
+  border-radius: 0.5px;
+}
+
 ::selection {
   background-color: var(--select-background-color);
   color: var(--select-color);
@@ -96,19 +103,25 @@ blockquote {
 }
 
 .navbar {
+  display: flex;
+  flex-direction: column;
   background-color: var(--background-color);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-bottom: 3px solid dimgrey;
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1000;
+}
+
+.navbar-btns {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
   padding-inline: 1em;
-  left: 0;
-  right: 0;
-  top: 0;
-  margin-bottom: 20px;
-  border-bottom: 3px solid dimgrey;
-  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.19);
+  margin-left: auto;
 }
 
 .lightmode-darkmode-btn {
@@ -237,14 +250,55 @@ blockquote {
   z-index: 9;
 }
 
+.breadcrumb {
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  padding-right: 1em;
+  margin-right: auto;
+  margin-top: -4em;
+  align-items: center;
+  font-size: 18px;
+  margin-left: 7em;
+  line-height: 1.4;
+  font-style: italic;
+  border-top: 2px solid dimgrey;
+  border-right: 2px solid dimgrey;
+  border-top-right-radius: 3px;
+}
+
+.breadcrumb ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb li {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+.breadcrumb li::after {
+  content: ">";
+  margin-left: 0.5em;
+}
+
+.breadcrumb li:last-child::after {
+  content: "";
+}
+
+/* .breadcrumb li[aria-current="page"] {
+  font-weight: bold;
+} */
+
 .home-screen {
-  margin-top: 5em;
+  margin-top: 4em;
   color: royalblue;
-  font-size: clamp(30px, 10vw, 60px);
+  font-size: clamp(30px, 10vw, 65px);
   font-weight: bold;
   text-align: center;
   line-height: 1;
-  margin-bottom: 3em;
+  margin-bottom: 4em;
 }
 
 .normal-text {
@@ -537,7 +591,7 @@ blockquote {
     padding: 3px;
     font-size: 40px;
     line-height: 1.2;
-    margin-top: 2em;
+    margin-top: 3em;
     margin-bottom: 0.5em;
   }
 
@@ -586,8 +640,18 @@ blockquote {
     padding-top: 0.25em;
   }
 
+  .breadcrumb {
+    margin-left: 2em;
+    margin-right: auto;
+    margin-top: 0;
+    line-height: 1.3;
+    border-top: 1.5px solid dimgrey;
+    border-right: 0px solid dimgrey;
+    font-size: 15px;
+  }
+
   .home-screen {
-    margin-top: 7em;
+    margin-top: 8em;
     margin-bottom: 7em;
   }
 
