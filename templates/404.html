@@ -36,73 +36,65 @@
 
   <body>
     <div class="navbar" id="navbar">
-      <div
-        id="lightmode-darkmode-btn"
-        class="lightmode-darkmode-btn"
-        alt="lightmode/darkmode btn"
-        title="switch between darkmode and lightmode"
-        onclick="toggleDarkMode()"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
-          />
-        </svg>
-      </div>
-      <div id="homeLink" class="home-btn" alt="home btn" title="home">
-        <a href="https://emilgerlach.com">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-            />
-          </svg>
-        </a>
+      <div class="navbar-btns"> 
+        <div id="lightmode-darkmode-btn" class="lightmode-darkmode-btn" alt="lightmode/darkmode btn" title="switch between darkmode and lightmode" onclick="toggleDarkMode()">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+          </svg>        
+        </div>
+        <div id="homeLink" class="home-btn" alt="home btn" title="home">
+          <a href="https://emilgerlach.com">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+            </svg>  
+          </a>        
+        </div>
+        <nav>
+          <input type="checkbox" id="sidebar-active">
+          <label for="sidebar-active" class="open-sidebar-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </label>
+          <label id="overlay" for="sidebar-active"></label>
+          <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </label>
+            <a>404</a>
+            <div class="sidebar-special-content">
+              <a href="/blog">My Blog</a>
+              <a href="/dev">Dev</a>
+            </div>
+          </div>
+        </nav>
       </div>
     </div>
+    <div class="fullscreen-404">
+      <div class="emoji-404">😬</div>
 
-    <div class="descr-text-errorpage">
-      <div style="font-size: 50px">😬</div>
+      <div class="oups-404">oups</div>
 
-      <div style="font-size: 40px; margin-bottom: 0.8em">oups</div>
+      <div class="number-404">404</div>
 
-      <div style="font-size: 24px; margin-bottom: -20px"><b>404</b></div>
-      <br />
-      you found a page that does not exist<br />
-      <div>
-        try to go back to the previous page or go to the
+      <p class="text-404">you found a page that does not exist<br>
+        go back to the previous page or go to the
         <a href="https://emilgerlach.com">start page</a>
+      </p>
+  
+      <div class="legal-content" style=" margin-top: auto">
+        <span class="legal-text">
+          designed and developed by emil gerlach
+          <div class="legal-text-things">
+            &copy; 2025 Emil Gerlach<br />
+            <a href="#">up</a>
+          </div>
+          <div class="disclaimer">
+            Despite careful content control, I assume no liability for the content
+            of external links. <br />The operators of the linked pages are solely
+            responsible for their content.
+          </div>
+        </span>
       </div>
-    </div>
-
-    <div class="legal-content">
-      <span class="legal-text">
-        designed and developed by emil gerlach
-        <div class="legal-text-things">
-          &copy; 2025 Emil Gerlach<br />
-          <a href="#">up</a>
-        </div>
-        <div class="disclaimer">
-          Despite careful content control, I assume no liability for the content
-          of external links. <br />The operators of the linked pages are solely
-          responsible for their content.
-        </div>
-      </span>
     </div>
 
     <script src="../static/js/main.js" defer></script>

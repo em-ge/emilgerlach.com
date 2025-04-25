@@ -34,6 +34,11 @@ def article_portus_wie_die_roemer_wohnten():
     return render_template("index_portus_wie_die_roemer_wohnten.html")
 
 
+@app.route("/blog/early-christian-symbols-and-their-meanings")
+def article_early_christian_symbols_and_their_meanings():
+    return render_template("index_early_christian_symbols.html")
+
+
 @app.route("/dev")
 def dev():
     return render_template(
