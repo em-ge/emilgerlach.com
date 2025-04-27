@@ -6,6 +6,7 @@
   --btn-color: black;
   --select-color: royalblue;
   --select-background-color: lightgray;
+  --other-background-color: rgba(0, 0, 0, 0.209);
 }
 
 body {
@@ -142,6 +143,7 @@ a:focus {
 
 .lightmode-darkmode-btn:hover {
   transform: scale(1.05);
+  transition: transform 0.3s ease;
   color: royalblue;
   opacity: 1;
 }
@@ -163,6 +165,7 @@ a:focus {
 
 .home-btn a:hover {
   transform: scale(1.05);
+  transition: transform 0.3s ease;
   color: royalblue;
   opacity: 1;
 }
@@ -190,6 +193,7 @@ a:focus {
 
 .open-sidebar-btn:hover {
   transform: scale(1.05);
+  transition: transform 0.3s ease;
   color: royalblue;
   opacity: 1;
 }
@@ -355,7 +359,7 @@ a:focus {
   padding-right: 1em;
   cursor: pointer;
   margin-top: -1.5em;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
   margin-left: 0.5em;
 }
 
@@ -371,6 +375,7 @@ a:focus {
 
 .mail-contact-img:hover {
   transform: scale(1.07);
+  transition: transform 0.3s ease;
   color: royalblue;
   opacity: 1;
 }
@@ -390,6 +395,7 @@ a:focus {
   cursor: pointer;
   margin-top: -1.5em;
   margin-left: 0.5em;
+  margin-bottom: 1.5em;
 }
 
 .github-contact-img {
@@ -403,6 +409,7 @@ a:focus {
 
 .github-contact-img:hover {
   transform: scale(1.07);
+  transition: transform 0.3s ease;
   color: royalblue;
   opacity: 1;
 }
@@ -427,6 +434,7 @@ a:focus {
 
 .soundcloud-contact-img:hover {
   transform: scale(1.07);
+  transition: transform 0.3s ease;
   color: royalblue;
   opacity: 1;
 }
@@ -451,9 +459,90 @@ a:focus {
 
 .soundcloud-contact-img:hover {
   transform: scale(1.07);
+  transition: transform 0.3s ease;
   color: royalblue;
   opacity: 1;
 } */
+
+.languages-bar-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.12em;
+  margin-top: -1em;
+  cursor: pointer;
+}
+
+.languages-text {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.2em;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.bar {
+  height: 0.8em;
+}
+
+.bar:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.bar-text {
+  cursor: pointer;
+  padding: 0.2em;
+}
+
+.bar-text:hover {
+  background-color: var(--select-background-color);
+  border-radius: 5px;
+}
+
+.js {
+  background-color: #f1e05a;
+}
+
+.js-text {
+  color: #f1e05a;
+}
+
+.html {
+  background-color: #e34c26;
+  color: #e34c26;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.html-text {
+  color: #e34c26;
+}
+
+.css {
+  background-color: #663399;
+}
+
+.css-text {
+  color: #663399;
+}
+
+.python {
+  background-color: #3572a5;
+}
+
+.python-text {
+  color: #3572a5;
+}
+
+.other {
+  background-color: var(--other-background-color);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.other-text {
+  color: var(--other-background-color);
+}
 
 .terms-div {
   margin-top: 0.7em;
@@ -499,6 +588,7 @@ a:focus {
 
 .n-t-a-container:hover {
   transform: scale(1.03);
+  transition: transform 0.3s ease;
   cursor: pointer;
   border: 2px solid royalblue;
 }
@@ -553,6 +643,7 @@ a:focus {
 
 .download:hover {
   transform: scale(1.03);
+  transition: transform 0.3s ease;
   cursor: pointer;
   border: 2px solid royalblue;
 }

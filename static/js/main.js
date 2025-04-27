@@ -92,6 +92,11 @@ function toggleDarkMode() {
       "--select-background-color",
       "lightgray"
     );
+    // language
+    document.documentElement.style.setProperty(
+      "--other-background-color",
+      "rgba(0, 0, 0, 0.209)"
+    );
 
     const homeBtnDarkmode = document.querySelector(".home-btn");
     homeBtnDarkmode.style.opacity = "1";
@@ -127,6 +132,11 @@ function toggleDarkMode() {
       "--select-background-color",
       "dimgray"
     );
+    // language
+    document.documentElement.style.setProperty(
+      "--other-background-color",
+      "rgb(237, 237, 237, 0.6)"
+    );
 
     const homeBtnLightmode = document.querySelector(".home-btn");
     homeBtnLightmode.style.opacity = "0.56";
@@ -160,3 +170,54 @@ function setMetaThemeColor() {
     metaThemeColor.setAttribute("content", themeColor);
   }
 }
+
+const htmlText = document.querySelector(".html-text");
+const htmlElement = document.querySelector(".html");
+
+htmlText.addEventListener("mouseenter", () => {
+  htmlElement.style.transform = "scale(1.02)";
+});
+htmlText.addEventListener("mouseleave", () => {
+  htmlElement.style.transform = "scale(1)";
+});
+
+const cssText = document.querySelector(".css-text");
+const cssElement = document.querySelector(".css");
+
+cssText.addEventListener("mouseenter", () => {
+  cssElement.style.transform = "scale(1.09)";
+});
+cssText.addEventListener("mouseleave", () => {
+  cssElement.style.transform = "scale(1)";
+});
+
+const jsText = document.querySelector(".js-text");
+const jsElement = document.querySelector(".js");
+
+jsText.addEventListener("mouseenter", () => {
+  jsElement.style.transform = "scale(1.1)";
+});
+jsText.addEventListener("mouseleave", () => {
+  jsElement.style.transform = "scale(1)";
+});
+
+const pythonText = document.querySelector(".python-text");
+const pythonElement = document.querySelector(".python");
+
+pythonText.addEventListener("mouseenter", () => {
+  pythonElement.style.transform = "scale(1.18)";
+});
+pythonText.addEventListener("mouseleave", () => {
+  pythonElement.style.transform = "scale(1)";
+});
+
+const otherText = document.querySelector(".other-text");
+const otherElement = document.querySelector(".other");
+
+otherText.addEventListener("mouseenter", () => {
+  otherElement.style.transform = "scale(1.2)";
+});
+
+otherText.addEventListener("mouseleave", () => {
+  otherElement.style.transform = "scale(1)";
+});
