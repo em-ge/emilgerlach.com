@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="keywords" content="Emil Gerlach, Gerlach, Emil Gerlach Website" />
+    <meta name="description" content="Emil Gerlach" />
+
+    <meta name="theme-color" content="" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <meta name="author" content="Emil Gerlach" />
+
+    <title>Emil Gerlach</title>
+    <link rel="stylesheet" href="../static/css/styles.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/favicons/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/favicons/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/favicons/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../static/favicons/favicon_io/site.webmanifest">
+
+  <body>
+    <div class="navbar" id="navbar">
+      <div class="navbar-btns"> 
+        <div id="lightmode-darkmode-btn" class="lightmode-darkmode-btn" alt="lightmode/darkmode btn" title="switch between darkmode and lightmode" onclick="toggleDarkMode()">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+          </svg>        
+        </div>
+        <div id="homeLink" class="home-btn" alt="home btn" title="home">
+          <a href="https://emilgerlach.com">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+            </svg>  
+          </a>        
+        </div>
+        <nav>
+          <input type="checkbox" id="sidebar-active">
+          <label for="sidebar-active" class="open-sidebar-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </label>
+          <label id="overlay" for="sidebar-active"></label>
+          <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </label>
+            <a href="#random-bible-verse">random bible verse</a>
+            <a href="#note">note</a>
+            <div class="sidebar-special-content">
+              <a href="/blog">My Blog</a>
+              <a href="/dev">Dev</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div style="display: flex">
+        <nav aria-label="breadcrumb" class="breadcrumb">
+          <ol>
+            <li><a href="https://emilgerlach.com">Home</a></li>
+            <li aria-current="page">random bible verse</li>
+          </ol>
+        </nav>
+     </div>
+    </div>
+  
+    <h1>
+      A Random Bible Verse
+    </h1>
+    <p class="normal-text">
+      This is a a randomly selected Bible verse every time you visit!
+    </p>
+
+    <div class="sub-heading">
+      <h2 id="random-bible-verse">random bible verse</h2>
+    </div>
+    <p class="normal-text" id="bible-verse" style="margin-left: -2em;">
+      Load Bible verse...
+    </p>
+
+    <div class="sub-heading">
+      <h2 id="note">note</h2>
+    </div>
+    <p class="normal-text">
+      This feature is powered by this <a href="https://github.com/thiagobodruk/bible" target="_blank">Bible API</a>.
+    </p>
+  
+    <div class="legal-content">
+      <span class="legal-text">
+        <p class="designed-and-developed">designed and developed by emil gerlach</p>
+        <div class="legal-text-things">
+          &copy; 2025 Emil Gerlach<br/>
+          <a href="#">up</a> 
+        </div>
+        <div class="disclaimer">Despite careful content control, I assume no liability for the content of external links. <br/>The operators of the linked pages are solely responsible for their content.</div>
+      </span>
+    </div>
+
+    <script src="../static/js/main.js" defer></script>
+    <script src="../static/js/randomBibleVerse.js" defer></script>
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="2c9e0cab-33e4-49bc-b9b4-7e4daf24e0b0"></script>
+  </body>
+</html>

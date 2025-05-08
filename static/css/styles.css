@@ -40,7 +40,7 @@ h1 {
 
 h2 {
   color: royalblue;
-  font-size: 30px;
+  font-size: 33px;
   margin-bottom: 2em;
   line-height: 1;
   margin-block-start: 0em;
@@ -344,7 +344,7 @@ a:focus {
 }
 
 .sub-heading {
-  margin-bottom: 0.3em;
+  margin-bottom: 0.4em;
 }
 
 .contact {
@@ -713,6 +713,11 @@ a:focus {
   margin-bottom: 1em;
 }
 
+.designed-and-developed {
+  font-size: 20px;
+  font-style: italic;
+}
+
 .disclaimer {
   margin-top: 2em;
   font-size: 18px;
@@ -804,6 +809,22 @@ a:focus {
     margin-bottom: 1.2em;
   }
 
+  .languages-bar-container {
+    margin-top: -0.7em;
+  }
+
+  .languages-text {
+    font-size: 1px;
+  }
+
+  .bar {
+    height: 0.6em;
+  }
+
+  .bar:hover {
+    transform: scale(1);
+  }
+
   .emoji-404 {
     margin-top: 10dvh;
     font-size: 45px;
@@ -845,6 +866,10 @@ a:focus {
     /* width: 100vw !important;
     margin-left: -4em !important;
     margin-left: -4em !important; */
+  }
+
+  .designed-and-developed {
+    font-size: 16px;
   }
 
   .disclaimer {
