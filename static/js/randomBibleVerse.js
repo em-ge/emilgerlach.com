@@ -17,10 +17,13 @@ fetch("../static/data/bible_en_kjv.json")
     const chapterNumber = chapterIndex + 1;
     const verseNumber = verseIndex + 1;
 
-    document.getElementById("bible-verse").innerHTML = `<div class="bibleverse">
-  <div class="verse">"${verse}"</div>
-  <p class="bibleverse-info">~ ${bookName} ${chapterNumber}:${verseNumber}, KJV</p>
+    document.getElementById(
+      "bible-verse"
+    ).innerHTML = `<div class="random-bibleverse">
+  <div class="random-verse">"${verse}"</div>
+  <p class="random-bibleverse-info">~ ${bookName} ${chapterNumber}:${verseNumber}, KJV</p>
 </div>`;
+    console.log("new bible verse in website");
   })
   .catch((error) => {
     console.error("Bible verse could not be loaded:", error);

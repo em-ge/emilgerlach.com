@@ -1,7 +1,7 @@
 # http://94.130.107.104:11000/
 
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_from_directory
 
 # from flask_debugtoolbar import DebugToolbarExtension
 
@@ -41,7 +41,14 @@ def article_early_christian_symbols_and_their_meanings():
 
 @app.route("/random-bible-verse")
 def random_bible_verse():
-    return render_template("index_randombibleverse.html")
+    return render_template("index_random_bible_verse.html")
+
+
+@app.route("/static/data/bible_en_kjv.json")
+def download_file():
+    return send_from_directory(
+        "static", "data/bible_en_kjv.json", as_attachment=False, max_age=2419200
+    )
 
 
 @app.route("/dev")

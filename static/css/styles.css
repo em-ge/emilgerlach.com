@@ -99,6 +99,10 @@ a:focus {
   scroll-margin-top: 3.8em;
 }
 
+.note[id] {
+  scroll-margin-top: 7em;
+}
+
 .tab {
   padding-left: 1.5em;
 }
@@ -663,6 +667,14 @@ a:focus {
   margin-right: auto;
 }
 
+.random-bibleverse {
+  margin-top: 0.5em;
+  line-height: 1.1;
+  font-style: italic;
+  padding: 0.2em;
+  margin-right: auto;
+}
+
 .verse-number {
   font-size: 13px;
   color: var(--text-color);
@@ -677,8 +689,25 @@ a:focus {
   font-family: "PT Serif", serif;
 }
 
+.random-verse {
+  font-size: 21px;
+  display: inline;
+  color: royalblue;
+  margin-top: -0.2em;
+  font-family: "PT Serif", serif;
+}
+
 .bibleverse-info {
   font-size: 16px;
+  display: flex;
+  color: var(--text-color);
+  margin-top: 0.5em;
+  font-style: normal;
+  justify-content: flex-end;
+}
+
+.random-bibleverse-info {
+  font-size: 18px;
   display: flex;
   color: var(--text-color);
   margin-top: 0.5em;
@@ -736,7 +765,7 @@ a:focus {
     padding: 3px;
     font-size: 30px;
     line-height: 1.2;
-    margin-top: 4em;
+    margin-top: 5em;
     margin-bottom: 0.5em;
   }
 
@@ -754,6 +783,10 @@ a:focus {
 
   [id] {
     scroll-margin-top: 5.3em;
+  }
+
+  .note[id] {
+    scroll-margin-top: 10em;
   }
 
   .navbar {
@@ -814,7 +847,7 @@ a:focus {
   }
 
   .languages-text {
-    font-size: 1px;
+    font-size: 14px;
   }
 
   .bar {
@@ -888,6 +921,13 @@ a:focus {
     line-height: 1.2;
   }
 
+  .random-bibleverse {
+    padding: 0.2em;
+    margin-left: 1em;
+    margin-right: auto;
+    line-height: 1.2;
+  }
+
   .verse-number {
     font-size: 10px;
   }
@@ -896,8 +936,17 @@ a:focus {
     font-size: 17px;
   }
 
+  .random-verse {
+    font-size: 19px;
+  }
+
   .bibleverse-info {
     font-size: 14px;
+    margin-top: 0.2em;
+  }
+
+  .random-bibleverse-info {
+    font-size: 16px;
     margin-top: 0.2em;
   }
 }

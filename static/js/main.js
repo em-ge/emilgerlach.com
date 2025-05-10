@@ -151,15 +151,33 @@ function toggleDarkMode() {
 
 // On page load
 document.addEventListener("DOMContentLoaded", () => {
-  if (localStorage.getItem("darkMode") === "enabled") {
+  const darkModeSetting = localStorage.getItem("darkMode");
+
+  if (darkModeSetting === "enabled") {
     lightmode = false;
-  } else {
+  } else if (darkModeSetting === "disabled") {
     lightmode = true;
+  } else {
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+    lightmode = !prefersDark;
   }
 
   toggleDarkMode();
   setMetaThemeColor();
 });
+
+// Reagieren auf systemweiten Wechsel von Hell - Dunkel (nur wenn keine Benutzereinstellung gespeichert)
+window
+  .matchMedia("(prefers-color-scheme: dark)")
+  .addEventListener("change", (e) => {
+    const darkModeSetting = localStorage.getItem("darkMode");
+    if (!darkModeSetting) {
+      lightmode = !e.matches;
+      toggleDarkMode();
+    }
+  });
 
 function setMetaThemeColor() {
   const themeColor = getComputedStyle(document.documentElement)
