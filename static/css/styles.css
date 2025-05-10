@@ -472,7 +472,7 @@ a:focus {
   display: flex;
   flex-direction: row;
   gap: 0.12em;
-  margin-top: -1em;
+  margin-top: 0.6em;
   cursor: pointer;
 }
 
@@ -504,11 +504,11 @@ a:focus {
 }
 
 .js {
-  background-color: #f1e05a;
+  background-color: #ffe05a;
 }
 
 .js-text {
-  color: #f1e05a;
+  color: #ffe05a;
 }
 
 .html {
@@ -654,7 +654,7 @@ a:focus {
 
 .note {
   font-style: italic;
-  font-size: 20px;
+  font-size: 19px;
   margin-top: 0.1em;
 }
 
@@ -671,6 +671,7 @@ a:focus {
   margin-top: 0.5em;
   line-height: 1.1;
   font-style: italic;
+  text-align: center;
   padding: 0.2em;
   margin-right: auto;
 }
@@ -743,7 +744,7 @@ a:focus {
 }
 
 .designed-and-developed {
-  font-size: 20px;
+  font-size: 19px;
   font-style: italic;
 }
 
@@ -842,10 +843,6 @@ a:focus {
     margin-bottom: 1.2em;
   }
 
-  .languages-bar-container {
-    margin-top: -0.7em;
-  }
-
   .languages-text {
     font-size: 14px;
   }
@@ -911,7 +908,7 @@ a:focus {
 
   .note {
     font-style: italic;
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .bibleverse {
@@ -941,7 +938,7 @@ a:focus {
   }
 
   .bibleverse-info {
-    font-size: 14px;
+    font-size: 15px;
     margin-top: 0.2em;
   }
 

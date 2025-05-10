@@ -51,6 +51,11 @@ def download_file():
     )
 
 
+@app.route("/language-breakdown")
+def language_breakdown():
+    return render_template("index_language_breakdown.html")
+
+
 @app.route("/dev")
 def dev():
     return render_template(
