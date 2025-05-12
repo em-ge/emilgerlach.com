@@ -24,76 +24,78 @@
     <link rel="manifest" href="../static/favicons/favicon_io/site.webmanifest">
 
   <body>
-    <div class="navbar" id="navbar">
-      <div class="navbar-btns"> 
-        <div id="lightmode-darkmode-btn" class="lightmode-darkmode-btn" alt="lightmode/darkmode btn" title="switch between darkmode and lightmode" onclick="toggleDarkMode()">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
-          </svg>        
-        </div>
-        <div id="homeLink" class="home-btn" alt="home btn" title="home">
-          <a href="https://emilgerlach.com">
+    <div class="body-without-footer">
+      <div class="navbar" id="navbar">
+        <div class="navbar-btns"> 
+          <div id="lightmode-darkmode-btn" class="lightmode-darkmode-btn" alt="lightmode/darkmode btn" title="switch between darkmode and lightmode" onclick="toggleDarkMode()">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-            </svg>  
-          </a>        
-        </div>
-        <nav>
-          <input type="checkbox" id="sidebar-active">
-          <label for="sidebar-active" class="open-sidebar-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </label>
-          <label id="overlay" for="sidebar-active"></label>
-          <div class="links-container">
-            <label for="sidebar-active" class="close-sidebar-btn">
-              <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-            </label>
-            <a href="#random-bible-verse">random bible verse</a>
-            <a href="#note">note</a>
-            <div class="sidebar-special-content">
-              <a href="/blog">My Blog</a>
-              <a href="/dev">Dev</a>
-              <a href="/language-breakdown">Language Breakdown</a>
-            </div>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+            </svg>        
           </div>
-        </nav>
+          <div id="homeLink" class="home-btn" alt="home btn" title="home">
+            <a href="https://emilgerlach.com">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+              </svg>  
+            </a>        
+          </div>
+          <nav>
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+              <label for="sidebar-active" class="close-sidebar-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+              </label>
+              <a href="#random-bible-verse">random bible verse</a>
+              <a href="#note">note</a>
+              <div class="sidebar-special-content">
+                <a href="/blog">My Blog</a>
+                <a href="/dev">Dev</a>
+                <a href="/language-breakdown">Language Breakdown</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div style="display: flex">
+          <nav aria-label="breadcrumb" class="breadcrumb">
+            <ol>
+              <li><a href="https://emilgerlach.com">Home</a></li>
+              <li aria-current="page">random bible verse</li>
+            </ol>
+          </nav>
       </div>
-      <div style="display: flex">
-        <nav aria-label="breadcrumb" class="breadcrumb">
-          <ol>
-            <li><a href="https://emilgerlach.com">Home</a></li>
-            <li aria-current="page">random bible verse</li>
-          </ol>
-        </nav>
-     </div>
+      </div>
+    
+      <h1>
+        A Random Bible Verse
+      </h1>
+      <p class="normal-text">
+        This is a a randomly selected Bible verse every time you visit or reload the page.
+        It's a simple way to get daily inspiration, reflect on Scripture, or discover verses you might not have read before. 
+        You can also use it as a starting point for devotionals or personal study.
+      </p>
+
+      <div class="sub-heading">
+        <h2 id="random-bible-verse">random bible verse</h2>
+      </div>
+      <p class="normal-text" id="bible-verse">
+        Load Bible verse...
+      </p>
+
+      <div id="note" class="note">
+        <b>note:</b>
+        I got the data for this feature from <a href="https://github.com/thiagobodruk/bible" target="_blank">this GitHub repository</a>.
+      </div>
     </div>
-  
-    <h1>
-      A Random Bible Verse
-    </h1>
-    <p class="normal-text">
-      This is a a randomly selected Bible verse every time you visit or reload the page.
-      It's a simple way to get daily inspiration, reflect on Scripture, or discover verses you might not have read before. 
-      You can also use it as a starting point for devotionals or personal study.
-    </p>
 
-    <div class="sub-heading">
-      <h2 id="random-bible-verse">random bible verse</h2>
-    </div>
-    <p class="normal-text" id="bible-verse">
-      Load Bible verse...
-    </p>
-
-    <div id="note" class="note">
-      <b>note:</b>
-      I got the data for this feature from <a href="https://github.com/thiagobodruk/bible" target="_blank">this GitHub repository</a>.
-
-
-    <div class="legal-content">
-      <span class="legal-text">
-        <p class="designed-and-developed">designed and developed by emil gerlach</p>
-        <div class="legal-text-things">
+    <div class="footer">
+      <span class="footer-text">
+        <p class="made-with-love-by">made with 💙 by emil gerlach</p>
+        <div class="footer-text-things">
           &copy; 2025 Emil Gerlach<br/>
           <a href="#">up</a> 
         </div>

@@ -24,133 +24,136 @@
     <link rel="manifest" href="../static/favicons/favicon_io/site.webmanifest">
 
   <body>
-    <div class="navbar" id="navbar">
-      <div class="navbar-btns"> 
-        <div id="lightmode-darkmode-btn" class="lightmode-darkmode-btn" alt="lightmode/darkmode btn" title="switch between darkmode and lightmode" onclick="toggleDarkMode()">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
-          </svg>        
-        </div>
-        <div id="homeLink" class="home-btn" alt="home btn" title="home">
-          <a href="https://emilgerlach.com">
+    <div class="body-without-footer">
+      <div class="navbar" id="navbar">
+        <div class="navbar-btns"> 
+          <div id="lightmode-darkmode-btn" class="lightmode-darkmode-btn" alt="lightmode/darkmode btn" title="switch between darkmode and lightmode" onclick="toggleDarkMode()">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-            </svg>  
-          </a>        
-        </div>
-        <nav>
-          <input type="checkbox" id="sidebar-active">
-          <label for="sidebar-active" class="open-sidebar-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </label>
-          <label id="overlay" for="sidebar-active"></label>
-          <div class="links-container">
-            <label for="sidebar-active" class="close-sidebar-btn">
-              <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-            </label>
-            <a href="#about-emil">about me</a>
-            <a href="#about-website">about this Website</a>
-            <a href="#contact">contact</a>
-            <a href="#find-me">find me here also</a>
-            <a href="#language-breakdown">language breakdown</a>
-            <div class="sidebar-special-content">
-              <a href="/blog">My Blog</a>
-              <a href="/dev">Dev</a>
-              <a href="/language-breakdown">Language Breakdown</a>
-              <a href="/random-bible-verse">Random Bible Verse</a>
-            </div>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+            </svg>        
           </div>
-        </nav>
+          <div id="homeLink" class="home-btn" alt="home btn" title="home">
+            <a href="https://emilgerlach.com">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+              </svg>  
+            </a>        
+          </div>
+          <nav>
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+              <label for="sidebar-active" class="close-sidebar-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+              </label>
+              <a href="#about-emil">about me</a>
+              <a href="#about-website">about this Website</a>
+              <a href="#contact">contact</a>
+              <a href="#find-me">find me here also</a>
+              <a href="#language-breakdown">language breakdown</a>
+              <div class="sidebar-special-content">
+                <a href="/blog">My Blog</a>
+                <a href="/dev">Dev</a>
+                <a href="/language-breakdown">Language Breakdown</a>
+                <a href="/random-bible-verse">Random Bible Verse</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div style="display: flex">
+          <nav aria-label="breadcrumb" class="breadcrumb">
+            <ol>
+              <li><a aria-current="page" href="https://emilgerlach.com">Home</a></li>
+            </ol>
+          </nav>
       </div>
-      <div style="display: flex">
-        <nav aria-label="breadcrumb" class="breadcrumb">
-          <ol>
-            <li><a aria-current="page" href="https://emilgerlach.com">Home</a></li>
-          </ol>
-        </nav>
-     </div>
-    </div>
-  
-    <div class="home-screen">
-      emilgerlach.com
-    </div>
-    <div class="fade-in-text">
-      <p class="normal-text">
-        I'm Emil, and I'm a self-taught hobbyist developer from Germany.<br/>
-        Welcome to my website, where I share my projects, articles and blog posts. <br/>
-      </p>
-    </div>
+      </div>
+    
+      <div class="home-screen">
+        emilgerlach.com
+      </div>
+      <div class="fade-in-text">
+        <p class="normal-text">
+          I'm Emil, and I'm a self-taught hobbyist developer from Germany.<br/>
+          Welcome to my website, where I share my projects, articles and blog posts. <br/>
+        </p>
+      </div>
 
-    <div class="fade-in-text">
+      <div class="fade-in-text">
+        <div class="sub-heading">
+          <h2 id="about-emil">about me</h2>
+        </div>
+        <p class="normal-text">
+          In 2023, I started learning to code as a teenager using Swift Playgrounds.
+          By now, I've tried a bit of everything (Python, Godot, HTML, CSS, JavaScript, Flask, Turtle, Pygame, Strudel, Swift, Go). I'm still learning a  bit of everything.<br/>
+          I only code as a hobby for fun in my free time, so I'm definitely not professional.<br/>
+          Beyond coding, history fascinates me. <br/>
+          Also I like to make Music. 
+          Occasionally, I play low-elo <a href="https://www.chess.com/member/em-ge" target="_blank">chess</a> and <a href="https://www.aoe2insights.com/user/13091349/" target="_blank">AoE2</a> at a noob level.<br>
+          Most of the time, I call myself 'em-ge' online.
+        </p>
+      </div>
+
       <div class="sub-heading">
-        <h2 id="about-emil">about me</h2>
+        <h2 id="about-website">about this Website</h2>
       </div>
       <p class="normal-text">
-        In 2023, I started learning to code as a teenager using Swift Playgrounds.
-        By now, I've tried a bit of everything (Python, Godot, HTML, CSS, JavaScript, Flask, Turtle, Pygame, Strudel, Swift, Go). I'm still learning a  bit of everything.<br/>
-        I only code as a hobby for fun in my free time, so I'm definitely not professional.<br/>
-        Beyond coding, history fascinates me. <br/>
-        Also I like to make Music. 
-        Occasionally, I play low-elo <a href="https://www.chess.com/member/em-ge" target="_blank">chess</a> and <a href="https://www.aoe2insights.com/user/13091349/" target="_blank">AoE2</a> at a noob level.<br>
-        Most of the time, I call myself 'em-ge' online.
+        This website first went online in April 2024 and was my first big project.<br/>
+        This site runs on Flask. To learn more about the languages used on this website, click <a href="https://emilgerlach.com/language-breakdown">here</a>.<br/>
+        <a href="https://github.com/em-ge/emilgerlach.com" target="_blank">Here</a>, you can view the complete code in a repository on GitHub.<br/> 
+        I am still working on this website and try to improve it, so please excuse any errors or issues you may encounter.
       </p>
-    </div>
 
-    <div class="sub-heading">
-      <h2 id="about-website">about this Website</h2>
-    </div>
-    <p class="normal-text">
-      This website first went online in April 2024 and was my first big project.<br/>
-      Like the first version of this website, it still runs on Flask.<br/>
-      <a href="https://github.com/em-ge/emilgerlach.com" target="_blank">Here</a>, you can view the complete code in a repository on GitHub.<br/> 
-      I am still working on this website and try to improve it, so please excuse any errors or issues you may encounter.
-    </p>
+      <div class="sub-heading">
+        <h2 id="contact">contact</h2>
+      </div>
+      <p class="normal-text">
+        Feel free to contact me with any ideas, feedback, or suggestions. I'd love to hear from you!
+      </p>    
+    
+      <div class="contact">
+        <div class="mail-contact" title="send a mail to: info@emilgerlach.com">
+          <div class="mail-contact-img">
+            <a href="mailto:info@emilgerlach.com" >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+              </svg>
+            </a>
+          </div>
+          <div>
+            <a href="mailto:info@emilgerlach.com">info@emilgerlach.com</a>
+          </div>
+        </div>
+      </div>
 
-    <div class="sub-heading">
-      <h2 id="contact">contact</h2>
-    </div>
-    <p class="normal-text">
-      Feel free to contact me with any ideas, feedback, or suggestions. I'd love to hear from you!
-    </p>    
-   
-    <div class="contact">
-      <div class="mail-contact" title="send a mail to: info@emilgerlach.com">
-        <div class="mail-contact-img">
-          <a href="mailto:info@emilgerlach.com" >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+      <div class="text">
+        <div class="sub-heading">
+          <h2 id="find-me">find me here also:</h2>
+        </div>
+      </div>
+      <div class="find-me">
+        <div class="github-contact" title="github: em-ge">
+          <div class="github-contact-img">
+            <svg version="1.1" viewBox="0 0 16 16">\
+              <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
             </svg>
-          </a>
+          </div>
+          <div>
+            <a href="https://github.com/em-ge" target="_blank">em-ge</a>
+          </div>
         </div>
-        <div>
-          <a href="mailto:info@emilgerlach.com">info@emilgerlach.com</a>
-        </div>
-      </div>
-    </div>
+      </div> 
+    </div>  
 
-    <div class="text">
-      <div class="sub-heading">
-        <h2 id="find-me">find me here also:</h2>
-      </div>
-    </div>
-    <div class="find-me">
-      <div class="github-contact" title="github: em-ge">
-        <div class="github-contact-img">
-          <svg version="1.1" viewBox="0 0 16 16">\
-            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
-          </svg>
-        </div>
-        <div>
-          <a href="https://github.com/em-ge" target="_blank">em-ge</a>
-        </div>
-      </div>
-    </div> 
-
-    <div class="legal-content">
-      <span class="legal-text">
-        <p class="designed-and-developed">designed and developed by emil gerlach</p>
-        <div class="legal-text-things">
+    <div class="footer">
+      <span class="footer-text">
+        <p class="made-with-love-by">made with 💙 by emil gerlach</p>
+        <!-- <p class="designed-and-developed">designed and developed by emil gerlach</p> -->
+        <div class="footer-text-things">
           &copy; 2025 Emil Gerlach<br/>
           <a href="#">up</a> 
         </div>

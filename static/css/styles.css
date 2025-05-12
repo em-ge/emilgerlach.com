@@ -10,11 +10,7 @@
 }
 
 body {
-  padding-inline: 1em;
-  margin-left: 5em;
-  margin-right: 5em;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0;
   font-family: "Helvetica", "Arial", sans-serif;
   font-optical-sizing: auto;
   font-weight: normal;
@@ -25,6 +21,12 @@ body {
   line-height: 1.6;
   font-size: 21px;
   min-height: 100vh;
+}
+
+.body-without-footer {
+  margin-left: 5em;
+  margin-right: 5em;
+  padding-inline: 1em;
 }
 
 h1 {
@@ -745,25 +747,22 @@ a:focus {
   font-style: italic;
 }
 
-.legal-content {
+.footer {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.209);
   padding: 2em;
   margin-top: 3em;
   font-size: 21px;
-  /* right: 0;
-  left: 0; */
-  /* width: 100vw !important;
-    margin-left: -4em !important;
-    margin-left: -4em !important; */
+  padding-left: 6em;
+  padding-right: 6em;
 }
 
-.legal-text-things {
+.footer-text-things {
   margin-top: 1.5em;
   margin-bottom: 1em;
 }
 
-.designed-and-developed {
+.made-with-love-by {
   font-size: 19px;
   font-style: italic;
 }
@@ -776,10 +775,13 @@ a:focus {
 @media (max-width: 500px) {
   /* font-size: 4 less */
   body {
-    margin-left: 1em;
-    margin-right: 1em;
     line-height: 1.5;
     font-size: 17px;
+  }
+
+  .body-without-footer {
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
   h1 {
@@ -923,16 +925,15 @@ a:focus {
     font-size: 16px;
   }
 
-  .legal-content {
+  .footer {
     padding: 1em;
     font-size: 16px;
-    /* width: 100vw !important;
-    margin-left: -4em !important;
-    margin-left: -4em !important; */
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
-  .designed-and-developed {
-    font-size: 16px;
+  .made-with-love-by {
+    font-size: 15px;
   }
 
   .disclaimer {
