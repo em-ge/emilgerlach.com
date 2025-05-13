@@ -43,37 +43,85 @@
   <body>
     <div class="body-without-footer">
       <div class="navbar" id="navbar">
-        <div class="navbar-btns"> 
-          <div id="lightmode-darkmode-btn" class="lightmode-darkmode-btn" alt="lightmode/darkmode btn" title="switch between darkmode and lightmode" onclick="toggleDarkMode()">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
-            </svg>        
+        <div class="navbar-btns">
+          <div
+            id="lightmode-darkmode-btn"
+            class="lightmode-darkmode-btn"
+            alt="lightmode/darkmode btn"
+            title="switch between darkmode and lightmode"
+            onclick="toggleDarkMode()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+              />
+            </svg>
           </div>
           <div id="homeLink" class="home-btn" alt="home btn" title="home">
             <a href="https://emilgerlach.com">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-              </svg>  
-            </a>        
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                />
+              </svg>
+            </a>
           </div>
           <nav>
-            <input type="checkbox" id="sidebar-active">
+            <input type="checkbox" id="sidebar-active" />
             <label for="sidebar-active" class="open-sidebar-btn">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
             </label>
             <label id="overlay" for="sidebar-active"></label>
-            <div class="links-container">
+            <div class="sidebar-container">
               <label for="sidebar-active" class="close-sidebar-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32"
+                  viewBox="0 -960 960 960"
+                  width="32"
+                >
+                  <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                  />
+                </svg>
               </label>
-              <a href="#dev-meaning">Meaning of 'Dev'</a>
-              <a href="#technical-terms">Technical Terms in Dev</a>
-              <a href="#short-quote">Short Quote</a>
-              <div class="sidebar-special-content">
-                <a href="/blog">My Blog</a>
-                <a href="/language-breakdown">Language Breakdown</a>
-                <a href="/random-bible-verse">Random Bible Verse</a>
+              <div class="sidebar-links-container">
+                <a href="#dev-meaning">Meaning of 'Dev'</a>
+                <a href="#technical-terms">Technical Terms in Dev</a>
+                <a href="#short-quote">Short Quote</a>
+                <div class="sidebar-special-content">
+                  <a href="/blog">My Blog</a>
+                  <a href="/language-breakdown">Language Breakdown</a>
+                  <a href="/random-bible-verse">Random Bible Verse</a>
+                </div>
               </div>
             </div>
           </nav>
@@ -85,15 +133,13 @@
               <li aria-current="page">Dev</li>
             </ol>
           </nav>
+        </div>
       </div>
-      </div>
-    
-      <h1>
-        Dev
-      </h1>
+
+      <h1>Dev</h1>
       <p class="normal-text">
-        This is my subpage about Dev. Here, you'll find technical terms, concepts,
-        and much more to development.
+        This is my subpage about Dev. Here, you'll find technical terms,
+        concepts, and much more to development.
       </p>
 
       <div class="sub-heading">
@@ -105,17 +151,20 @@
         You can also say 'programming' or 'coding'. <br /><br />
         But how to start?<br />
         I recommend learning to code with
-        <a href="https://developer.apple.com/swift-playgrounds/" target="_blank">Swift Playgrounds</a>. 
-        It’s an excellent tool for beginners, offering an interactive way to learn the basics of programming.
-        With Swift Playgrounds, you can build a solid foundation in coding, which is essential for developing logical thinking and problem-solving skills.
+        <a href="https://developer.apple.com/swift-playgrounds/" target="_blank"
+          >Swift Playgrounds</a
+        >. It's an excellent tool for beginners, offering an interactive way to
+        learn the basics of programming. With Swift Playgrounds, you can build a
+        solid foundation in coding, which is essential for developing logical
+        thinking and problem-solving skills.
       </p>
 
       <div class="sub-heading">
         <h2 id="technical-terms">important technical terms in dev</h2>
       </div>
       <p class="normal-text">
-        In the world of development, there are several key technical terms. I will
-        try to explain some of them briefly.
+        In the world of development, there are several key technical terms. I
+        will try to explain some of them briefly.
       </p>
       <div class="terms-div">
         <div class="term">
@@ -180,18 +229,16 @@
         These terms are important, in my opinion, for starting to learn
         programming.
       </p>
-      
 
       <div class="sub-heading">
         <h2 id="short-quote">Short Quote</h2>
       </div>
       <blockquote>
-        Computer is always right and makes no mistakes.<br/>
+        Computer is always right and makes no mistakes.<br />
         It just follows instructions - even the wrong ones.
       </blockquote>
-      
-      <!-- My Projects:-->
 
+      <!-- My Projects:-->
     </div>
 
     <div class="footer">
@@ -210,6 +257,10 @@
     </div>
 
     <script src="../static/js/main.js" defer></script>
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="2c9e0cab-33e4-49bc-b9b4-7e4daf24e0b0"></script>
+    <script
+      defer
+      src="https://cloud.umami.is/script.js"
+      data-website-id="2c9e0cab-33e4-49bc-b9b4-7e4daf24e0b0"
+    ></script>
   </body>
 </html>

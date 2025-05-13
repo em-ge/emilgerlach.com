@@ -39,6 +39,11 @@ def article_early_christian_symbols_and_their_meanings():
     return render_template("index_early_christian_symbols.html")
 
 
+@app.route("/blog/founding-and-legacy-of-rome")
+def article_founding_and_legacy_of_rome():
+    return render_template("index_founding_and_legacy_of_rome.html")
+
+
 @app.route("/random-bible-verse")
 def random_bible_verse():
     return render_template("index_random_bible_verse.html")

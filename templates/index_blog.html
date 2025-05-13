@@ -38,20 +38,23 @@
           <nav>
             <input type="checkbox" id="sidebar-active">
             <label for="sidebar-active" class="open-sidebar-btn">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
             </label>
             <label id="overlay" for="sidebar-active"></label>
-            <div class="links-container">
+            <div class="sidebar-container">
               <label for="sidebar-active" class="close-sidebar-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
               </label>
-              <a href="#article">Article</a>
-              <a href="#news">News/Tutorials/Articles</a>
-              <div class="sidebar-special-content">
-                <a href="/dev">Dev</a>
-                <a href="/language-breakdown">Language Breakdown</a>
-                <a href="/random-bible-verse">Random Bible Verse</a>
+              <div class="sidebar-links-container">
+                <a href="#article">Article</a>
+                <a href="#news">News/Tutorials/Articles</a>
+                <div class="sidebar-special-content">
+                  <a href="/dev">Dev</a>
+                  <a href="/language-breakdown">Language Breakdown</a>
+                  <a href="/random-bible-verse">Random Bible Verse</a>
+                </div>
               </div>
             </div>
           </nav>
@@ -83,13 +86,32 @@
         You can also <a href="mailto:info@emilgerlach.com">send</a> me your topic suggestions and feedback. Let me know what you think - I'd love to hear from you!
       </p>
       <div class="n-t-a">
+        <a class="n-t-a-container" href="/blog/founding-and-legacy-of-rome">
+          <div class="n-t-a-top-container">
+            <div class="n-t-a-heading">
+              Founding and Legacy of Rome - Between Myth and Reality
+            </div>
+            <div class="n-t-a-topic">
+              History
+            </div>
+          </div>
+          <div class="n-t-a-descr">
+            How was Rome truly founded? Today, it still endures — and two thousand years ago, 
+            it was the heart of a vast empire whose influence continues to shape our daily lives.<br>
+            In this article, we'll take a clear-eyed look at how Rome grew from scattered settlements into a sprawling empire — 
+            and how its legacy lives on in our laws, our language, and the cities we build.
+          </div>
+        </a>
+      <div>
+
+      <div class="n-t-a">
         <a class="n-t-a-container" href="/blog/early-christian-symbols-and-their-meanings">
           <div class="n-t-a-top-container">
             <div class="n-t-a-heading">
               Early Christian Symbols and Their Meanings
             </div>
             <div class="n-t-a-topic">
-              Faith
+              Faith, History
             </div>
           </div>
           <div class="n-t-a-descr">
@@ -206,7 +228,7 @@
           <div class="n-t-a-descr">
             Writing clean code is a habit that professional developers cultivate, 
             showing dedication to quality and a strong work ethic. And in this article, 
-            I’ll walk you through some best practices for keeping your code clean.
+            I'll walk you through some best practices for keeping your code clean.
           </div>
           <div class="n-t-a-source">
             source: freeCodeCamp

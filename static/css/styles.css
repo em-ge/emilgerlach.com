@@ -19,7 +19,7 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   line-height: 1.6;
-  font-size: 21px;
+  font-size: 20px;
   min-height: 100vh;
 }
 
@@ -49,6 +49,13 @@ h2 {
   margin-block-end: 0em;
 }
 
+h3 {
+  font-size: 25px;
+  line-height: 1;
+  margin-top: 0.8em;
+  margin-bottom: 0.3em;
+}
+
 p {
   margin-block-start: 0em;
   margin-block-end: 0em;
@@ -62,6 +69,7 @@ a {
 a:hover {
   cursor: pointer;
   color: royalblue;
+  transition: color 0.3s !important;
 }
 
 nav {
@@ -103,6 +111,10 @@ a:focus {
 
 .note[id] {
   scroll-margin-top: 7em;
+}
+
+h3[id] {
+  scroll-margin-top: 5em;
 }
 
 .tab {
@@ -151,6 +163,7 @@ a:focus {
   transform: scale(1.05);
   transition: transform 0.3s ease;
   color: royalblue;
+  transition: color 0.3s;
   opacity: 1;
 }
 
@@ -170,15 +183,16 @@ a:focus {
 }
 
 .home-btn a:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) !important;
   transition: transform 0.3s ease;
   color: royalblue;
+  transition: color 0.3s;
   opacity: 1;
 }
 
 .close-sidebar-btn {
   padding-top: 1em;
-  padding-left: 2em;
+  padding-left: 1.5em;
   display: block;
 }
 
@@ -201,10 +215,11 @@ a:focus {
   transform: scale(1.05);
   transition: transform 0.3s ease;
   color: royalblue;
+  transition: color 0.3s;
   opacity: 1;
 }
 
-.links-container {
+.sidebar-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -212,42 +227,62 @@ a:focus {
   top: 0;
   right: -100%;
   z-index: 10;
-  width: 17em;
+  width: 20em;
   height: 100%;
   background-color: var(--background-color);
   box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
   transition: 0.6s ease-out;
+  overflow-x: hidden;
 }
 
-.links-container a {
+.sidebar-links-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.sidebar-links-container a {
+  display: block;
   white-space: nowrap;
-  align-items: center;
   text-decoration: none;
   padding-left: 1.5em;
-  padding-right: 100%;
+  width: 100%;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
+  box-sizing: border-box;
+  padding-left: 1.5em;
+  padding-right: 0.3em;
 }
 
-.links-container a:hover {
+.sidebar-links-container a:hover {
   background-color: var(--select-background-color);
+  transition: background-color 0.5s;
+}
+
+.sub-links {
+  margin-bottom: 0.5em;
+}
+
+.sub-links a {
+  padding-left: 3em;
 }
 
 .sidebar-special-content {
-  display: flex;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
   flex-direction: column;
-  padding-top: 1.5em;
-}
-
-.sidebar-special-content a {
-  padding-right: 300%;
+  margin-top: 2em;
 }
 
 #sidebar-active {
   display: none;
 }
 
-#sidebar-active:checked ~ .links-container {
+#sidebar-active:checked ~ .sidebar-container {
   right: 0;
 }
 
@@ -403,6 +438,7 @@ a:focus {
   transform: scale(1.07);
   transition: transform 0.3s ease;
   color: royalblue;
+  transition: color 0.5s;
   opacity: 1;
 }
 
@@ -437,6 +473,7 @@ a:focus {
   transform: scale(1.07);
   transition: transform 0.3s ease;
   color: royalblue;
+  transition: color 0.5s;
   opacity: 1;
 }
 
@@ -462,6 +499,7 @@ a:focus {
   transform: scale(1.07);
   transition: transform 0.3s ease;
   color: royalblue;
+  transition: color 0.5s;
   opacity: 1;
 }
 
@@ -487,6 +525,7 @@ a:focus {
   transform: scale(1.07);
   transition: transform 0.3s ease;
   color: royalblue;
+  transition: color 0.5s;
   opacity: 1;
 } */
 
@@ -522,6 +561,7 @@ a:focus {
 
 .bar-text:hover {
   background-color: var(--select-background-color);
+  transition: background-color 0.5s;
   border-radius: 5px;
 }
 
@@ -614,13 +654,15 @@ a:focus {
 
 .n-t-a-container:hover {
   transform: scale(1.03);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease !important;
   cursor: pointer;
   border: 2px solid royalblue;
+  transition: border-color 0.5s !important;
 }
 
 .n-t-a-container:hover .n-t-a-descr {
   color: var(--text-color);
+  transition: color 0.5s;
 }
 
 .n-t-a-top-container {
@@ -654,6 +696,18 @@ a:focus {
   margin-top: 0.2em;
 }
 
+.sources-h2 {
+  font-size: 29px !important;
+}
+
+.sources-h3 {
+  font-size: 24px !important;
+}
+
+.sources-text {
+  font-size: 18.5px !important;
+}
+
 .download {
   display: inline-block;
   border: 2px solid dimgrey;
@@ -672,6 +726,7 @@ a:focus {
   transition: transform 0.3s ease;
   cursor: pointer;
   border: 2px solid royalblue;
+  transition: border-color 0.5s !important;
 }
 
 .note {
@@ -741,9 +796,9 @@ a:focus {
 .blog-ending {
   display: flex;
   justify-content: center;
-  margin-top: 2em;
-  margin-bottom: -0.5em;
-  font-size: 19px;
+  text-align: center;
+  margin-top: 4em;
+  font-size: 18px;
   font-style: italic;
 }
 
@@ -752,7 +807,6 @@ a:focus {
   background-color: rgba(0, 0, 0, 0.209);
   padding: 2em;
   margin-top: 3em;
-  font-size: 21px;
   padding-left: 6em;
   padding-right: 6em;
 }
@@ -760,6 +814,7 @@ a:focus {
 .footer-text-things {
   margin-top: 1.5em;
   margin-bottom: 1em;
+  font-size: 19px;
 }
 
 .made-with-love-by {
@@ -799,6 +854,10 @@ a:focus {
     font-size: 23px;
   }
 
+  h3 {
+    font-size: 19px;
+  }
+
   blockquote {
     line-height: 1.3;
     font-size: 15.5px;
@@ -806,6 +865,10 @@ a:focus {
 
   [id] {
     scroll-margin-top: 5.3em;
+  }
+
+  h3[id] {
+    scroll-margin-top: 7.5em;
   }
 
   .note[id] {
@@ -921,7 +984,21 @@ a:focus {
     transform: scale(1);
   }
 
+  .sources-h2 {
+    font-size: 21.5px !important;
+  }
+
+  .sources-h3 {
+    font-size: 17px !important;
+  }
+
+  .sources-text {
+    font-size: 15px !important;
+  }
+
   .blog-ending {
+    margin-top: 3em;
+    margin-bottom: -0.5em;
     font-size: 16px;
   }
 
