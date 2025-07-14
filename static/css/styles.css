@@ -742,6 +742,7 @@ h3[id] {
   font-style: italic;
   font-size: 19px;
   margin-top: 0.1em;
+  margin-bottom: 1.5em;
 }
 
 .bibleverse {
@@ -827,12 +828,16 @@ h3[id] {
 }
 
 .made-with-love-by {
-  font-size: 19px;
+  font-size: 18.5px;
   font-style: italic;
 }
 
+.up-arrow-footer {
+  margin-top: 1em;
+}
+
 .disclaimer {
-  margin-top: 2em;
+  margin-top: 2.3em;
   font-size: 18px;
 }
 
@@ -1024,6 +1029,10 @@ h3[id] {
 
   .made-with-love-by {
     font-size: 15px;
+  }
+
+  .footer-text-things {
+    font-size: 16px;
   }
 
   .disclaimer {
