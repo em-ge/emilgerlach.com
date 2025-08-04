@@ -63,14 +63,6 @@ function adjustInputWidth(input) {
 
 let lightmode = true;
 
-function isMobile() {
-  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-  return /android|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(
-    userAgent
-  );
-}
-
 function toggleDarkMode() {
   if (lightmode === true) {
     // turn on Darkmode
@@ -189,53 +181,19 @@ function setMetaThemeColor() {
   }
 }
 
-const htmlText = document.querySelector(".html-text");
-const htmlElement = document.querySelector(".html");
+const collapsibles = document.querySelectorAll(".collapsible");
 
-htmlText.addEventListener("mouseenter", () => {
-  htmlElement.style.transform = "scale(1.02)";
-});
-htmlText.addEventListener("mouseleave", () => {
-  htmlElement.style.transform = "scale(1)";
-});
+collapsibles.forEach((container) => {
+  const btn = container.querySelector(".collapsible-toggle-btn");
 
-const cssText = document.querySelector(".css-text");
-const cssElement = document.querySelector(".css");
+  btn.addEventListener("click", () => {
+    container.classList.toggle("open");
 
-cssText.addEventListener("mouseenter", () => {
-  cssElement.style.transform = "scale(1.09)";
-});
-cssText.addEventListener("mouseleave", () => {
-  cssElement.style.transform = "scale(1)";
-});
-
-const jsText = document.querySelector(".js-text");
-const jsElement = document.querySelector(".js");
-
-jsText.addEventListener("mouseenter", () => {
-  jsElement.style.transform = "scale(1.1)";
-});
-jsText.addEventListener("mouseleave", () => {
-  jsElement.style.transform = "scale(1)";
-});
-
-const pythonText = document.querySelector(".python-text");
-const pythonElement = document.querySelector(".python");
-
-pythonText.addEventListener("mouseenter", () => {
-  pythonElement.style.transform = "scale(1.18)";
-});
-pythonText.addEventListener("mouseleave", () => {
-  pythonElement.style.transform = "scale(1)";
-});
-
-const otherText = document.querySelector(".other-text");
-const otherElement = document.querySelector(".other");
-
-otherText.addEventListener("mouseenter", () => {
-  otherElement.style.transform = "scale(1.2)";
-});
-
-otherText.addEventListener("mouseleave", () => {
-  otherElement.style.transform = "scale(1)";
+    // Pfeil drehen
+    if (container.classList.contains("open")) {
+      btn.style.transform = "rotate(-180deg)";
+    } else {
+      btn.style.transform = "rotate(0deg)";
+    }
+  });
 });

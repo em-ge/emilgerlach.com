@@ -7,3 +7,4 @@ config_server.txt
 .DS_Store
 
 notes/
+templates/.DS_Store

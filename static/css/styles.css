@@ -93,6 +93,11 @@ blockquote {
   font-size: 20px;
 }
 
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 button:focus,
 a:focus {
   outline: 2px solid royalblue;
@@ -124,8 +129,8 @@ h3[id] {
   scroll-margin-top: 5em;
 }
 
-.tab {
-  padding-left: 1.5em;
+.parent {
+  display: flex;
 }
 
 .navbar {
@@ -167,9 +172,9 @@ h3[id] {
 }
 
 .lightmode-darkmode-btn:hover {
+  color: royalblue;
   transform: scale(1.05);
   transition: transform 0.3s ease;
-  color: royalblue;
   transition: color 0.3s;
   opacity: 1;
 }
@@ -189,18 +194,11 @@ h3[id] {
   margin-bottom: 1em;
 }
 
-.home-btn a:hover {
+.home-btn:hover {
+  color: royalblue;
   transform: scale(1.05) !important;
   transition: transform 0.3s ease;
-  color: royalblue;
   transition: color 0.3s;
-  opacity: 1;
-}
-
-.close-sidebar-btn {
-  padding-top: 1em;
-  padding-left: 1.5em;
-  display: block;
 }
 
 .open-sidebar-btn {
@@ -219,11 +217,17 @@ h3[id] {
 }
 
 .open-sidebar-btn:hover {
+  color: royalblue;
   transform: scale(1.05);
   transition: transform 0.3s ease;
-  color: royalblue;
   transition: color 0.3s;
   opacity: 1;
+}
+
+.close-sidebar-btn {
+  padding-top: 1em;
+  padding-left: 1.5em;
+  display: block;
 }
 
 .sidebar-container {
@@ -355,13 +359,104 @@ h3[id] {
   letter-spacing: 0.01em;
 }
 
+.gw-heading {
+  margin-top: 4em;
+  color: royalblue;
+  font-size: clamp(30px, 10vw, 70px);
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.1;
+  margin-bottom: 4em;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
 .normal-text {
   margin-bottom: 1.5em;
+  /*???*/
+  text-align: justify; /*???*/
 }
 
 .fade-in-text {
   opacity: 1;
   transition: opacity 1s ease-in-out;
+}
+
+.img-text-container {
+  display: flex;
+  gap: 1em;
+  align-items: flex-start;
+}
+
+.img-text-container .normal-text {
+  flex: 1;
+}
+
+.collapsible {
+  margin-bottom: 2em;
+}
+
+.collapsible-heading {
+  display: flex;
+  align-items: center;
+}
+
+.collapsible-toggle-btn {
+  color: var(--btn-color);
+  width: 3.5em;
+  height: 3.5em;
+  cursor: pointer;
+  padding: 0.1em;
+  margin-right: 0.5em;
+  background-color: transparent;
+  border: none;
+  vertical-align: middle;
+  opacity: 0.35;
+  outline: none;
+  margin-bottom: 0.5em;
+  box-shadow: none;
+
+  transition: transform 0.5s;
+  transform: rotate(0deg);
+}
+
+.collapsible-toggle-btn:hover {
+  color: royalblue;
+  transform: scale(1.1);
+}
+
+.content-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.content {
+  margin-left: 2em;
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.open .content-wrapper {
+  max-height: 50em;
+}
+
+.open .content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.img-description {
+  font-size: 0.8em;
+  line-height: 1.1;
+  margin-top: 0.5em;
 }
 
 .fullscreen-404 {
@@ -538,6 +633,68 @@ h3[id] {
   opacity: 1;
 } */
 
+.uhrenwerkstatt-img {
+  width: 100%;
+  height: auto;
+}
+
+.magazin-preview-img {
+  width: 100%;
+  height: auto;
+  margin-right: 0.5em;
+  display: block;
+}
+
+.img-wrapper-mag {
+  display: inline-block;
+  width: 15%;
+  position: relative;
+  padding: 0;
+}
+
+.magazin-download {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  margin-right: 0;
+  margin-top: 1em;
+  /* max-width: 100%; */
+}
+
+.magazin-download-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.download-icon {
+  height: 35%;
+  width: auto;
+}
+
+.magazin-download:hover .magazin-download-label {
+  opacity: 1;
+}
+
+.werkbank-img {
+  width: 40%;
+  height: auto;
+  margin: 1em auto 3em;
+  justify-content: center;
+  align-items: center;
+}
+
 .languages-bar-container {
   display: flex;
   flex-direction: row;
@@ -558,11 +715,6 @@ h3[id] {
   height: 0.8em;
 }
 
-.bar:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
-
 .bar-text {
   cursor: pointer;
   padding: 0.2em;
@@ -578,6 +730,11 @@ h3[id] {
   background-color: #ffe05a;
 }
 
+.js:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
 .js-text {
   color: #ffe05a;
 }
@@ -589,12 +746,22 @@ h3[id] {
   border-bottom-left-radius: 10px;
 }
 
+.html:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
 .html-text {
   color: #e34c26;
 }
 
 .css {
   background-color: #663399;
+}
+
+.css:hover {
+  transform: scale(1.09);
+  transition: transform 0.3s ease;
 }
 
 .css-text {
@@ -605,6 +772,11 @@ h3[id] {
   background-color: #3572a5;
 }
 
+.python:hover {
+  transform: scale(1.18);
+  transition: transform 0.3s ease;
+}
+
 .python-text {
   color: #3572a5;
 }
@@ -613,6 +785,11 @@ h3[id] {
   background-color: var(--other-background-color);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+.other:hover {
+  transform: scale(1.25);
+  transition: transform 0.3s ease;
 }
 
 .other-text {
@@ -715,6 +892,7 @@ h3[id] {
 
 .sources-text {
   font-size: 18.5px !important;
+  overflow-wrap: break-word;
 }
 
 .download {
@@ -935,11 +1113,28 @@ h3[id] {
 
   .fade-in-text {
     opacity: 0;
-    transition: opacity 1.5s ease-in-out;
+    transition: opacity 1.3s ease-in-out;
   }
 
   .normal-text {
     margin-bottom: 1.2em;
+  }
+
+  .img-text-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .img-description {
+    line-height: 1;
+  }
+
+  .img-container {
+    width: 100% !important;
+  }
+
+  .uhrenwerkstatt-img {
+    width: 100%;
   }
 
   .languages-text {
@@ -1041,6 +1236,10 @@ h3[id] {
 
   .note {
     font-size: 16px;
+  }
+
+  .magazin-download-label {
+    opacity: 1;
   }
 
   .bibleverse {
