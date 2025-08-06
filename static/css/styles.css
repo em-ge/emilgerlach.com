@@ -21,6 +21,8 @@ body {
   line-height: 1.6;
   font-size: 20px;
   min-height: 100vh;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
 }
 
 .body-without-footer {
@@ -360,13 +362,13 @@ h3[id] {
 }
 
 .gw-heading {
-  margin-top: 4em;
+  margin-top: 4.5em;
+  margin-bottom: 5em;
   color: royalblue;
   font-size: clamp(30px, 10vw, 70px);
   font-weight: bold;
   text-align: center;
   line-height: 1.1;
-  margin-bottom: 4em;
   font-weight: 500;
   letter-spacing: 0.01em;
 }
@@ -375,11 +377,15 @@ h3[id] {
   margin-bottom: 1.5em;
   /*???*/
   text-align: justify; /*???*/
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  overflow-wrap: break-word;
 }
 
 .fade-in-text {
-  opacity: 1;
-  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
 }
 
 .img-text-container {
@@ -457,6 +463,8 @@ h3[id] {
   font-size: 0.8em;
   line-height: 1.1;
   margin-top: 0.5em;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .fullscreen-404 {
@@ -688,11 +696,14 @@ h3[id] {
 }
 
 .werkbank-img {
-  width: 40%;
+  width: 100%;
   height: auto;
-  margin: 1em auto 3em;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: -0.5em;
+}
+
+.img-container-werkbank {
+  margin: 0 auto 3em;
+  width: 75%;
 }
 
 .languages-bar-container {
@@ -1015,8 +1026,8 @@ h3[id] {
 }
 
 .disclaimer {
-  margin-top: 2.3em;
-  font-size: 18px;
+  margin-top: 2em;
+  font-size: 17px;
 }
 
 @media (max-width: 500px) {
@@ -1108,6 +1119,11 @@ h3[id] {
 
   .home-screen {
     margin-top: 8em;
+    margin-bottom: 7em;
+  }
+
+  .gw-heading {
+    margin-top: 6em;
     margin-bottom: 7em;
   }
 
@@ -1242,6 +1258,11 @@ h3[id] {
     opacity: 1;
   }
 
+  .img-container-werkbank {
+    margin: 0 auto 3em;
+    width: 100%;
+  }
+
   .bibleverse {
     padding: 0.2em;
     margin-left: 1em;
@@ -1279,16 +1300,11 @@ h3[id] {
   }
 }
 
-/* .div {
-  filter: blur(0px);
-  animation: blurIn 3s forwards;
-}
-
-@keyframes blurIn {
+@keyframes fadeIn {
   from {
-    filter: blur(0px);
+    opacity: 0;
   }
   to {
-    filter: blur(10px);
+    opacity: 1;
   }
-} */
+}
