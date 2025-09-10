@@ -16,12 +16,14 @@
     <meta name="author" content="Emil Gerlach" />
 
     <title>Die Pforzheimer Schmuck- und Uhrenindustrie im Wandel der Zeit</title>
-    <link rel="stylesheet" href="../static/css/styles.css" />
+    <link rel="preload" href="../static/css/styles.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="../static/css/styles.css"></noscript>
 
     <link rel="apple-touch-icon" sizes="180x180" href="../static/favicons/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../static/favicons/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../static/favicons/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="../static/favicons/favicon_io/site.webmanifest">
+  </head>
     
   <body>
     <div class="body-without-footer">
@@ -87,7 +89,7 @@
             Pforzheimer Schmuck und Uhren waren Weltbekannt. Waren aus der 'Goldstadt' wurden in fast alle Kontinente exportiert.<br>
             Dich wie kam es dazu? Vor allem die erste Hälfte des 20. Jahrunderts prägte nicht nur Pforzheim sondern auch ihre Schmuck- und Uhrenindsutrie. 
             Welche Einflüsse hatten prägende Ereignise der ersten Hälfte des 20. Jahrunderts, wie die völlige Zerstörung Pforzheims, zwei Weltkriege, 
-            ein NS-Regime, die Goldenen Zwanziger und schließlich der Wiederaufbau auf die Schmuck- und Uhrenindustrie in Pforhzeim?<br/>
+            ein NS-Regime, die Goldenen Zwanziger und schließlich der Wiederaufbau auf die Schmuck- und Uhrenindustrie in Pforhzeim?<br>
             Wie sich die Industrie im Wandel der Zeit verändert will ich in meinem Magazin näher beleuchten.<br>
             <a href="../static/downloads/grenzen_schmuck_und_uhrenindustrie_pforzheim_magazin.pdf" download class="magazin-download">
               <div class="img-wrapper-mag">
@@ -200,10 +202,10 @@
           <h2 id="about-website">über diese Website</h2>
         </div>
         <p class="normal-text">
-          Diese Unterseite habe ich für den <a href="https://www.pforzheim.de/stadt/stadtgeschichte/stadtarchiv/foerderverein/georg-simler-preis.html" target="_blank">Georg-Simler Preis</a> erstellt. Er ist ein Geschichtswettbewerb in Pforzheim.<br/>
+          Diese Unterseite habe ich für den <a href="https://www.pforzheim.de/stadt/stadtgeschichte/stadtarchiv/foerderverein/georg-simler-preis.html" target="_blank">Georg-Simler Preis</a> erstellt. Er ist ein Geschichtswettbewerb in Pforzheim.<br>
           Die Seite habe ich selber mithilfe HTML, CSS, etwas JavaScript und Python. Sie läuft über Flask. 
           Den Quellcode kann man jederzeit auf <a href="https://github.com/em-ge/emilgerlach.com" target="_blank">Github</a> einsehen.<br> 
-          Um mehr über die Programmiersprachen zu lernen, die ich für diese Website benutzte habe, klicke <a href="https://emilgerlach.com/language-breakdown">hier</a>.<br/>
+          Um mehr über die Programmiersprachen zu lernen, die ich für diese Website benutzte habe, klicke <a href="https://emilgerlach.com/language-breakdown">hier</a>.<br>
           Bei Fragen, Kritik, Verbesserungsvorschläge oder sonstigen Wünschen kann man mich über diese Email erreichen<a href="mailto:info@emilgerlach.com">info@emilgerlach.com</a>.
         </p>
       </div>
@@ -218,20 +220,20 @@
       </div>
 
     <div class="footer">
-      <span class="footer-text">
+      <div class="footer-text">
         <p class="made-with-love-by">made with 💙 by emil gerlach</p>
         <!-- <p class="designed-and-developed">designed and developed by emil gerlach</p> -->
         <div class="footer-text-things">
-          &copy; 2025 Emil Gerlach<br/>
+          &copy; 2025 Emil Gerlach<br>
           <div class="up-arrow-footer">
             &#x2B61;<a href="#">up</a> 
           </div>
         </div>
-        <div class="disclaimer">Ich übernehme keine Haftung für die Inhalte externer Links.<br/>Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</div>
-      </span>
+        <div class="disclaimer">Ich übernehme keine Haftung für die Inhalte externer Links.<br>Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</div>
+      </div>
     </div>
 
     <script src="../static/js/main.js" defer></script>
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="2c9e0cab-33e4-49bc-b9b4-7e4daf24e0b0"></script>
+    <script defer src="https://analytics.umami.is/script.js" data-website-id="2c9e0cab-33e4-49bc-b9b4-7e4daf24e0b0"></script>
   </body>
 </html>

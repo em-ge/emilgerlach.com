@@ -4,48 +4,126 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="keywords" content="Emil Gerlach, Gerlach, Emil Gerlach Blog, Blog, Emil Blog" />
+    <meta
+      name="keywords"
+      content="Emil Gerlach, Gerlach, Emil Gerlach Blog, Blog, Emil Blog"
+    />
     <meta name="description" content="My Blog" />
 
-    <meta name="theme-color" content="">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> 
+    <meta name="theme-color" content="" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
     <meta name="author" content="Emil Gerlach" />
 
     <title>EmilGerlach | My Blog</title>
-    <link rel="stylesheet" href="../static/css/styles.css" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="../static/favicons/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../static/favicons/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../static/favicons/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="../static/favicons/favicon_io/site.webmanifest">
+    <link
+      rel="preload"
+      href="../static/css/styles.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <noscript
+      ><link rel="stylesheet" href="../static/css/styles.css"
+    /></noscript>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../static/favicons/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../static/favicons/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../static/favicons/favicon_io/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="../static/favicons/favicon_io/site.webmanifest"
+    />
+  </head>
 
   <body>
     <div class="body-without-footer">
       <div class="navbar" id="navbar">
-        <div class="navbar-btns"> 
-          <div id="lightmode-darkmode-btn" class="lightmode-darkmode-btn" alt="lightmode/darkmode btn" title="switch between darkmode and lightmode" onclick="toggleDarkMode()">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
-            </svg>        
+        <div class="navbar-btns">
+          <div
+            id="lightmode-darkmode-btn"
+            class="lightmode-darkmode-btn"
+            alt="lightmode/darkmode btn"
+            title="switch between darkmode and lightmode"
+            onclick="toggleDarkMode()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+              />
+            </svg>
           </div>
           <div id="homeLink" class="home-btn" alt="home btn" title="home">
             <a href="https://emilgerlach.com">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-              </svg>  
-            </a>        
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                />
+              </svg>
+            </a>
           </div>
           <nav>
-            <input type="checkbox" id="sidebar-active">
+            <input type="checkbox" id="sidebar-active" />
             <label for="sidebar-active" class="open-sidebar-btn">
-               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
               </svg>
             </label>
             <label id="overlay" for="sidebar-active"></label>
             <div class="sidebar-container">
               <label for="sidebar-active" class="close-sidebar-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32"
+                  viewBox="0 -960 960 960"
+                  width="32"
+                >
+                  <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                  />
+                </svg>
               </label>
               <div class="sidebar-links-container">
                 <a href="#article">Article</a>
@@ -66,291 +144,223 @@
               <li aria-current="page">Blog</li>
             </ol>
           </nav>
-      </div>
+        </div>
       </div>
 
-      <h1>
-        My Blog
-      </h1>
+      <h1>My Blog</h1>
       <p class="normal-text">
-        Awesome, you found this page! <br>
-        Welcome to my blog, where you can find news and articles about tech, development, IT, science,
-        history and other topics I'm interested in and that seem important to me.
+        Awesome, you found this page! <br />
+        Welcome to my blog, where you can find news and articles about tech,
+        development, IT, science, history and other topics I'm interested in and
+        that seem important to me.
       </p>
 
       <div class="sub-heading">
         <h2 id="article">Articles</h2>
       </div>
       <p class="normal-text">
-        This is where I share my articles from coding and open-source-projects to science and other topics.<br/> 
-        You can also <a href="mailto:info@emilgerlach.com">send</a> me your topic suggestions and feedback. Let me know what you think - I'd love to hear from you!
+        This is where I share my articles from coding and open-source-projects
+        to science and other topics.<br />
+        You can also <a href="mailto:info@emilgerlach.com">send</a> me your
+        topic suggestions and feedback. Let me know what you think - I'd love to
+        hear from you!
       </p>
       <div class="n-t-a">
         <a class="n-t-a-container" href="/blog/benefits-of-playing-chess">
-          <div class="n-t-a-top-container">
-            <div class="n-t-a-heading">
-              The Benefits of Playing Chess - Why It's Worth It
-            </div>
-            <div class="n-t-a-topic">
-              Chess
-            </div>
+          <div class="n-t-a-topic">Chess</div>
+          <div class="n-t-a-heading">
+            The Benefits of Playing Chess - Why It's Worth It
           </div>
           <div class="n-t-a-descr">
-            Chess - at first glance, it may appear to be an overwhelmingly complex game. And to some extent, it might be true. 
-            Despite its relatively simple rules, the number of possible legal positions explodes quickly.<br>
-            But chess is far more than just a board game with endless variations. When played thoughtfully - beyond simply making legal moves - it offers profound benefits.
-            You see, chess is more than a simple chess game.
-            And if you play chess seriously — not just making legal moves without thinking — the game offers some real benefits.
+            Chess is more than rules and moves — played with thought, it
+            sharpens the mind and offers lasting cognitive benefits...
           </div>
         </a>
-      <div>
 
-      <div class="n-t-a">
         <a class="n-t-a-container" href="/blog/founding-and-legacy-of-rome">
-          <div class="n-t-a-top-container">
-            <div class="n-t-a-heading">
-              Founding and Legacy of Rome - Between Myth and Reality
-            </div>
-            <div class="n-t-a-topic">
-              History
-            </div>
+          <div class="n-t-a-topic">History</div>
+          <div class="n-t-a-heading">
+            Founding and Legacy of Rome - Between Myth and Reality
           </div>
           <div class="n-t-a-descr">
-            How was Rome truly founded? Today, it still endures - and two thousand years ago, 
-            it was the heart of a vast empire whose influence continues to shape our daily lives.<br>
-            In this article, we'll take a clear-eyed look at how Rome grew from scattered settlements into a sprawling empire  -  
-            and how its legacy lives on in our laws, our language, and the cities we build.
+            Rome's rise from villages to empire shaped laws, language, and
+            cities — its influence still echoes strongly in our world today...
           </div>
         </a>
-      <div>
 
-      <div class="n-t-a">
-        <a class="n-t-a-container" href="/blog/early-christian-symbols-and-their-meanings">
-          <div class="n-t-a-top-container">
-            <div class="n-t-a-heading">
-              Early Christian Symbols and Their Meanings
-            </div>
-            <div class="n-t-a-topic">
-              Faith, History
-            </div>
+        <a
+          class="n-t-a-container"
+          href="/blog/early-christian-symbols-and-their-meanings"
+        >
+          <div class="n-t-a-topic">Faith, History</div>
+          <div class="n-t-a-heading">
+            Early Christian Symbols and Their Meanings
           </div>
           <div class="n-t-a-descr">
-            In the early centuries of Christianity, openly practicing the faith often involved considerable risk.
-            To maintain a sense of community and express their religious identity, 
-            they used simple symbols that were not easily understood by outsiders.
-            These symbols ...
+            Early Christians, often persecuted, used discreet symbols to show
+            faith, preserve community, and express identity under difficult
+            conditions...
           </div>
         </a>
-      <div>
 
-      <!-- <div class="n-t-a">
-        <a class="n-t-a-container" href="/blog/grenzen-schmuck-und-uhrenindustrie-in-pf">
-          <div class="n-t-a-top-container">
-            <div class="n-t-a-heading">
-            [GERMAN] "Welche Grenzen wurden der Pforzheimer Schmuck- und Uhrenindustrie in der ersten Hälfte des 20. Jahrhunderts gesetzt?"
-            </div>
-            <div class="n-t-a-topic">
-              Geschichte
-            </div>
-          </div>
-          <div class="n-t-a-descr">
-            2024/2025 habe ich an einem Geschichtswettbewerb teilgenommen - näheres zu dem Wettbwerb weiter unten.
-            Dabei habe ich die Grenzen, die der Pforzheimer Schmuck- und Uhrenindustrie gesetzt wurden untersucht.
-          </div>
-        </a>
-      <div> -->
-
-      <div class="n-t-a">
         <a class="n-t-a-container" href="/blog/portus-wie-die-roemer-wohnten">
-          <div class="n-t-a-top-container">
-            <div class="n-t-a-heading">
+          <div class="n-t-a-topic">Geschichte</div>
+          <div class="n-t-a-heading">
             [GERMAN] "Portus - Wie die Römer wohnten"
-            </div>
-            <div class="n-t-a-topic">
-              Geschichte
-            </div>
           </div>
           <div class="n-t-a-descr">
-            2022/2023 habe ich an einem Geschichtswettbewerb teilgenommen - näheres zu dem Wettbwerb weiter unten.
-            Dabei habe ich untersucht, wie die Römer früher in Pforzheim - also Portus - gewohnt haben.
+            Untersuchung zu Portus: Wie lebten Römer einst in Pforzheim?
+            Wettbewerbsarbeit zeigt Alltag, Wohnen und Strukturen im antiken
+            Leben...
           </div>
         </a>
-      <div>
 
-      <div class="n-t-a">
         <a class="n-t-a-container" href="/blog/strudel">
-          <div class="n-t-a-top-container">
-            <div class="n-t-a-heading">
-              "Strudel: Create Dynamic Music in the Browser"
-            </div>
-            <div class="n-t-a-topic">
-              dev
-            </div>
+          <div class="n-t-a-topic">Music, Creative Coding</div>
+          <div class="n-t-a-heading">
+            "Strudel: Create Dynamic Music in the Browser"
           </div>
           <div class="n-t-a-descr">
             Strudel is a live coding platform that allows users to create music
-            directly in their browser. It is free, open-source, and suitable 
-            for both beginners and experienced users. Strudel provides ...
+            directly in their browser. It is free, open-source, and suitable for
+            both beginners and experienced users...
           </div>
         </a>
-      <div>
+      </div>
 
       <div id="note" class="note">
         <b>please note:</b>
-        I write about many topics out of personal interest or as a hobby. 
-        I'm not an expert in all of them, so some articles may contain mistakes or simplified explanations. 
-        I do my best to be accurate, but errors can occur.
+        I write about many topics out of personal interest or as a hobby. I'm
+        not an expert in all of them, so some articles may contain mistakes or
+        simplified explanations. I do my best to be accurate, but errors can
+        occur.
       </div>
 
       <div class="sub-heading" style="margin-top: 2em">
         <h2 id="news">News/Tutorials/Articles</h2>
       </div>
       <p class="normal-text">
-        Here are some links to news, tutorials, and articles. <br/>
+        Here are some links to news, tutorials, and articles. <br />
         I regularly try to add new content and update the existing ones.
       </p>
-      <div class="n-t-a">  <!--n-t-a =  News/Tutorials/Articles-->
-        <a class="n-t-a-container" href="https://timrodenbroeker.de/what-is-creative-coding/" target="_blank">
-          <div class="n-t-a-top-container">
-            <div class="n-t-a-heading">
-              "What is Creative Coding?"
-            </div>
-            <div class="n-t-a-topic">
-              Programming
-            </div>
-          </div>
+      <div class="n-t-a">
+        <!--n-t-a =  News/Tutorials/Articles-->
+        <a
+          class="n-t-a-container n-t-a-container-n-t-a"
+          href="https://timrodenbroeker.de/what-is-creative-coding/"
+          target="_blank"
+        >
+          <div class="n-t-a-topic">Programming</div>
+          <div class="n-t-a-heading">"What is Creative Coding?"</div>
           <div class="n-t-a-descr">
-            What is Creative Coding?
+            Creative Coding explores programming as an expressive art form —
+            blending code, visuals, sound, and interaction...
           </div>
-          <div class="n-t-a-website">
-            website: trcc
-          </div>
+          <div class="n-t-a-website">website: trcc</div>
         </a>
-        <a class="n-t-a-container" href="https://dev.to/kishansheth/200-project-ideas-from-beginner-to-advanced-with-open-source-contributions-3g6a?ref=dailydev" target="_blank">
-          <div class="n-t-a-top-container">
-            <div class="n-t-a-heading">
-              "200 Project Ideas from Beginner to Advanced with Open Source Contributions"
-            </div>
-            <div class="n-t-a-topic">
-                Programming
-            </div>
+        <a
+          class="n-t-a-container n-t-a-container-n-t-a"
+          href="https://dev.to/kishansheth/200-project-ideas-from-beginner-to-advanced-with-open-source-contributions-3g6a"
+          target="_blank"
+        >
+          <div class="n-t-a-topic">Programming</div>
+          <div class="n-t-a-heading">
+            "200 Project Ideas from Beginner to Advanced with Open Source
+            Contributions"
           </div>
           <div class="n-t-a-descr">
-            Whether you're a beginner looking to learn the fundamentals or an experienced 
-            developer seeking a challenging new endeavor, this curated list of 200 project 
-            ideas has something for ...
+            For beginners and advanced devs: 200 project ideas with open-source
+            contribution opportunities to boost skills and portfolio rapidly...
           </div>
-          <div class="n-t-a-website">
-            website: dev.to
-          </div>
+          <div class="n-t-a-website">website: dev.to</div>
         </a>
-        <a class="n-t-a-container" href="https://www.crossway.org/articles/5-things-science-cannot-explain-but-theism-can/" target="_blank">
-          <div class="n-t-a-top-container">
-            <div class="n-t-a-heading">
-              "5 Things Science Cannot Explain (but Theism Can)"
-            </div>
-            <div class="n-t-a-topic">
-              Science, Faith
-            </div>
+        <a
+          class="n-t-a-container n-t-a-container-n-t-a"
+          href="https://www.crossway.org/articles/5-things-science-cannot-explain-but-theism-can/"
+          target="_blank"
+        >
+          <div class="n-t-a-topic">Science, Faith</div>
+          <div class="n-t-a-heading">
+            "5 Things Science Cannot Explain (but Theism Can)"
           </div>
           <div class="n-t-a-descr">
-            The heart of scientism is the conviction that science can explain virtually everything and that, 
-            without a scientific account, something isn't proper knowledge. In reality many truths lie beyond scientific 
-            explanation — not merely from lack of data but in principle—and yet we know them to be true. 
-            Notably, theism can provide explanations for these cases.
+            Argues scientism can't account for all truths; theism offers
+            explanations and meaning for realities beyond empirical science's
+            scope...
           </div>
-          <div class="n-t-a-website">
-            website: crossway
-          </div>
+          <div class="n-t-a-website">website: crossway</div>
         </a>
-        <a class="n-t-a-container" href="https://www.howtogeek.com/habits-to-grow-to-become-a-better-programmer/?ref=dailydev" target="_blank">
-          <div class="n-t-a-top-container">
-            <div class="n-t-a-heading">
-              "Become a Better Programmer: 7 Habits to Grow"
-            </div>
-            <div class="n-t-a-topic">
-              Programming
-            </div>
+        <a
+          class="n-t-a-container n-t-a-container-n-t-a"
+          href="https://www.surajon.dev/5-github-repositories-for-an-instant-knowledge-boost"
+          target="_blank"
+        >
+          <div class="n-t-a-topic">Dev</div>
+          <div class="n-t-a-heading">
+            "5 GitHub Repositories for an Instant Knowledge Boost"
           </div>
           <div class="n-t-a-descr">
-            Are you a beginner programmer looking to go to the next level? 
-            Here are some of the best habits I adopted and how they made me 
-            not only a better programmer but also a better professional.
+            Five curated GitHub repositories to quickly level up your developer
+            knowledge — handpicked resources for learning and practice...
           </div>
-          <div class="n-t-a-website">
-            website: How-To Geek
-          </div>
+          <div class="n-t-a-website">website: Surajondev</div>
         </a>
-        <a class="n-t-a-container" href="https://www.uni-jena.de/297990/eine-zweite-mauer-in-den-deutschen-koepfen" target="_blank">
-          <div class="n-t-a-top-container">
-            <div class="n-t-a-heading">
-              [German] "Eine zweite Mauer in den deutschen Köpfen"
-            </div>
-            <div class="n-t-a-topic">
-              Geschichte
-            </div>
+        <a
+          class="n-t-a-container n-t-a-container-n-t-a"
+          href="https://www.uni-jena.de/297990/eine-zweite-mauer-in-den-deutschen-koepfen"
+          target="_blank"
+        >
+          <div class="n-t-a-topic">Geschichte</div>
+          <div class="n-t-a-heading">
+            [German] "Eine zweite Mauer in den deutschen Köpfen"
           </div>
           <div class="n-t-a-descr">
-            Neue Studie zeigt auf, dass ein alter römischer Grenzwall 
-            bis heute die Psychologie der Deutschen beeinflusst.
+            Neue Studie zeigt, dass ein antiker römischer Grenzwall bis heute
+            die Psychologie, Identität und Wahrnehmung der Deutschen prägt...
           </div>
           <div class="n-t-a-website">
             website: Friedrich-Schiller-Universität Jena
           </div>
         </a>
-        <a class="n-t-a-container" href="https://www.freecodecamp.org/news/how-to-write-clean-code-tips-for-developers/?ref=dailydev"" target="_blank">
-          <div class="n-t-a-top-container">
-            <div class="n-t-a-heading">
-              "How to Write Clean Code - Tips for Developers with Examples"
-            </div>
-            <div class="n-t-a-topic">
-              Programming
-            </div>
+        <a
+          class="n-t-a-container n-t-a-container-n-t-a"
+          href="https://www.freecodecamp.org/news/how-to-write-clean-code-tips-for-developers/"
+          target="_blank"
+        >
+          <div class="n-t-a-topic">Programming</div>
+          <div class="n-t-a-heading">
+            "How to Write Clean Code - Tips for Developers with Examples"
           </div>
           <div class="n-t-a-descr">
-            Writing clean code is a habit that professional developers cultivate, 
-            showing dedication to quality and a strong work ethic. And in this article, 
-            I'll walk you through some best practices for keeping your code clean.
+            Practical clean-code guidelines and examples: habits and best
+            practices professional developers use to keep code readable and
+            maintainable...
           </div>
-          <div class="n-t-a-website">
-            website: freeCodeCamp
-          </div>
-        </a>
-        <a class="n-t-a-container" href="https://www.makeuseof.com/customize-zsh-prompt-macos-terminal/" target="_blank">
-          <div class="n-t-a-top-container">
-            <div class="n-t-a-heading">
-              "How to Customize the zsh Prompt in the macOS Terminal"
-            </div>
-            <div class="n-t-a-topic">
-              Programming
-            </div>
-          </div>
-          <div class="n-t-a-descr">
-            Whether you want the zsh prompt to use a different color, display additional details, 
-            or adopt a minimal look to make the best of the space, macOS lets you do it. 
-            Learn how to customize the zsh prompt in Terminal to make ...
-          </div>
-          <div class="n-t-a-website">
-            website: makeuseof
-          </div>
+          <div class="n-t-a-website">website: freeCodeCamp</div>
         </a>
       </div>
     </div>
 
     <div class="footer">
-      <span class="footer-text">
+      <div class="footer-text">
         <p class="made-with-love-by">made with 💙 by emil gerlach</p>
         <div class="footer-text-things">
-          &copy; 2025 Emil Gerlach<br/>
-          <div class="up-arrow-footer">
-            &#x2B61;<a href="#">up</a> 
-          </div>
+          &copy; 2025 Emil Gerlach<br />
+          <div class="up-arrow-footer">&#x2B61;<a href="#">up</a></div>
         </div>
-        <div class="disclaimer">I assume no liability for the content of external links. <br/>The operators of the linked pages are solely responsible for their content.</div>
-      </span>
+        <div class="disclaimer">
+          I assume no liability for the content of external links. <br />The
+          operators of the linked pages are solely responsible for their
+          content.
+        </div>
+      </div>
     </div>
 
     <script src="../static/js/main.js" defer></script>
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="2c9e0cab-33e4-49bc-b9b4-7e4daf24e0b0"></script>
+    <script
+      defer
+      src="https://analytics.umami.is/script.js"
+      data-website-id="2c9e0cab-33e4-49bc-b9b4-7e4daf24e0b0"
+    ></script>
   </body>
 </html>

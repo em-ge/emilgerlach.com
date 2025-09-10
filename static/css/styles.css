@@ -829,62 +829,48 @@ h3[id] {
 }
 
 .n-t-a {
-  margin-top: -1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7em;
+  margin-top: -0.8em;
   margin-bottom: 0.3em;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
 }
 
 .n-t-a-container {
+  display: flex;
+  flex-direction: column;
   border: 2px solid dimgrey;
   border-radius: 7px;
   padding: 0.7em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  margin-top: 0.3em;
-  margin-bottom: 1.1em;
-  max-width: 42em;
-  cursor: pointer;
+  padding-bottom: 0.3em;
   text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: transform 0.3s ease, border-color 0.5s ease;
 }
 
 .n-t-a-container:hover {
   transform: scale(1.03);
-  transition: transform 0.3s ease !important;
-  cursor: pointer;
-  border: 2px solid royalblue;
-  transition: border-color 0.5s !important;
-}
-
-.n-t-a-container:hover .n-t-a-descr {
-  color: var(--text-color);
-  transition: color 0.5s;
-}
-
-.n-t-a-top-container {
-  display: flex;
+  border-color: royalblue;
+  color: var(--text-color) !important;
 }
 
 .n-t-a-heading {
   color: royalblue;
   font-size: 22px;
   font-weight: bold;
-  margin-right: 0.2em;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.1em;
   line-height: 1.25;
 }
 
 .n-t-a-topic {
   font-style: italic;
-  font-size: 18px;
-  margin-bottom: 0.2em;
-  margin-left: auto;
+  font-size: 17px;
 }
 
 .n-t-a-descr {
-  margin-bottom: 0.3em;
-  font-size: 20px;
+  margin-bottom: 0.2em;
+  font-size: 19px;
 }
 
 .n-t-a-website {
@@ -1191,6 +1177,10 @@ h3[id] {
     font-size: 17px;
     margin-top: 0.5em;
     line-height: 1;
+  }
+
+  .n-t-a {
+    grid-template-columns: 1fr;
   }
 
   .n-t-a-heading {

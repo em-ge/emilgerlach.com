@@ -18,7 +18,15 @@
     <meta name="author" content="Emil Gerlach" />
 
     <title>EmilGerlach | Dev</title>
-    <link rel="stylesheet" href="../static/css/styles.css" />
+    <link
+      rel="preload"
+      href="../static/css/styles.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <noscript
+      ><link rel="stylesheet" href="../static/css/styles.css"
+    /></noscript>
 
     <link
       rel="apple-touch-icon"
@@ -242,7 +250,7 @@
     </div>
 
     <div class="footer">
-      <span class="footer-text">
+      <div class="footer-text">
         <p class="made-with-love-by">made with 💙 by emil gerlach</p>
         <div class="footer-text-things">
           &copy; 2025 Emil Gerlach<br />
@@ -253,13 +261,13 @@
           operators of the linked pages are solely responsible for their
           content.
         </div>
-      </span>
+      </div>
     </div>
 
     <script src="../static/js/main.js" defer></script>
     <script
       defer
-      src="https://cloud.umami.is/script.js"
+      src="https://analytics.umami.is/script.js"
       data-website-id="2c9e0cab-33e4-49bc-b9b4-7e4daf24e0b0"
     ></script>
   </body>
