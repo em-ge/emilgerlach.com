@@ -26,16 +26,19 @@ window.addEventListener("load", () => {
   //   }
   // }
 
-  window.addEventListener("scroll", function () {
-    const fadeInTexts = document.querySelectorAll(".fade-in-text");
-    const scrollPosition = window.scrollY;
-
-    if (scrollPosition > 10) {
-      fadeInTexts.forEach(function (el) {
-        el.style.opacity = 1;
+  const els = document.querySelectorAll(".reveal");
+  const io = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in");
+          observer.unobserve(entry.target);
+        }
       });
-    }
-  });
+    },
+    { threshold: 0.14 }
+  );
+  els.forEach((el) => io.observe(el));
 
   function autoResizeWidth(textarea) {
     const minWidth = 10;
@@ -142,26 +145,22 @@ window.addEventListener("load", () => {
     }
   }
 
-  // On page load
-  document.addEventListener("DOMContentLoaded", () => {
-    const darkModeSetting = localStorage.getItem("darkMode");
+  const darkModeSetting = localStorage.getItem("darkMode");
 
-    if (darkModeSetting === "enabled") {
-      lightmode = false;
-    } else if (darkModeSetting === "disabled") {
-      lightmode = true;
-    } else {
-      const prefersDark = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      ).matches;
-      lightmode = !prefersDark;
-    }
+  if (darkModeSetting === "enabled") {
+    lightmode = false;
+  } else if (darkModeSetting === "disabled") {
+    lightmode = true;
+  } else {
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+    lightmode = !prefersDark;
+  }
 
-    toggleDarkMode();
-    setMetaThemeColor();
-  });
+  toggleDarkMode();
+  setMetaThemeColor();
 
-  // Reagieren auf systemweiten Wechsel von Hell - Dunkel (nur wenn keine Benutzereinstellung gespeichert)
   window
     .matchMedia("(prefers-color-scheme: dark)")
     .addEventListener("change", (e) => {
