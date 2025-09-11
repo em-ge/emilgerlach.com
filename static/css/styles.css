@@ -22,7 +22,7 @@ body {
   font-size: 20px;
   min-height: 100vh;
   opacity: 0;
-  animation: fadeIn 0.5s ease-in forwards;
+  animation: fadeIn 0.5s ease-in forwards !important;
 }
 
 .body-without-footer {
@@ -100,11 +100,12 @@ ul {
   margin-bottom: 0;
 }
 
-button:focus,
-a:focus {
-  outline: 2px solid royalblue;
+button:focus-visible,
+a:focus-visible {
   outline-offset: 0.15em;
-  border-radius: 0.5px;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(65, 105, 225, 0.6); /* weicher Fokus */
+  border-radius: 5px;
 }
 
 ::selection {
@@ -383,10 +384,11 @@ h3[id] {
   overflow-wrap: break-word;
 }
 
-.fade-in-text {
+/* ???????? */
+/* .fade-in-text {
   opacity: 0;
-  animation: fadeIn 1s ease-in forwards;
-}
+  animation: fadeIn 0.5s ease-in forwards;
+} */
 
 .img-text-container {
   display: flex;
@@ -399,7 +401,7 @@ h3[id] {
 }
 
 .collapsible {
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 
 .collapsible-heading {
@@ -408,7 +410,7 @@ h3[id] {
 }
 
 .collapsible-toggle-btn {
-  color: var(--btn-color);
+  color: var(--text-color);
   width: 3.5em;
   height: 3.5em;
   cursor: pointer;
@@ -417,8 +419,7 @@ h3[id] {
   background-color: transparent;
   border: none;
   vertical-align: middle;
-  opacity: 0.35;
-  outline: none;
+  opacity: 0.45;
   margin-bottom: 0.5em;
   box-shadow: none;
 
@@ -427,7 +428,7 @@ h3[id] {
 }
 
 .collapsible-toggle-btn:hover {
-  color: royalblue;
+  color: royalblue !important;
   transform: scale(1.1);
 }
 
