@@ -108,13 +108,13 @@
         Klicke <a href="../static/downloads/grenzen_schmuck_und_uhrenindustrie_pforzheim_magazin.pdf" download>hier</a> 
         um mein Magazin als PDF herunterzuladen.<Br>
         Hier ein kurzer Überblick über meine Forschungsergebnisse und der Inhalt des Magazins:
-        </div>
+      </div>
 
       <div class="reveal">
         <div class="collapsible">
           <div class="sub-heading collapsible-heading">
-            <button class="collapsible-toggle-btn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+            <button class="collapsible-toggle-btn arrow">
+              <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
             </button>
             <h2 id="aufschwung">Aufschwung</h2>
           </div>
@@ -130,8 +130,8 @@
       <div class="reveal">
         <div class="collapsible">
           <div class="sub-heading collapsible-heading">
-            <button class="collapsible-toggle-btn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+            <button class="collapsible-toggle-btn arrow">
+              <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
             </button>
             <h2 id="1WK">Erster Weltkrieg</h2>
           </div>
@@ -146,8 +146,8 @@
       <div class="reveal">
         <div class="collapsible">
           <div class="sub-heading collapsible-heading">
-            <button class="collapsible-toggle-btn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+            <button class="collapsible-toggle-btn arrow">
+              <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
             </button>
             <h2 id="goldene-20er">Goldene Zwanziger</h2>
           </div>
@@ -162,8 +162,8 @@
       <div class="reveal">
         <div class="collapsible">
           <div class="sub-heading collapsible-heading">
-            <button class="collapsible-toggle-btn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+            <button class="collapsible-toggle-btn arrow">
+              <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
             </button>
             <h2 id="2WK">NS-Regime, Zweiter Weltkrieg & völlige Zerstörung Pforzheims</h2>
           </div>
@@ -178,8 +178,8 @@
       <div class="reveal">
         <div class="collapsible">
           <div class="sub-heading collapsible-heading">
-            <button class="collapsible-toggle-btn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+            <button class="collapsible-toggle-btn arrow">
+              <svg class="arrow-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
             </button>
             <h2 id="about-website">Wiederaufbau</h2>
           </div>
@@ -207,7 +207,7 @@
           Die Seite habe ich selber mithilfe HTML, CSS, etwas JavaScript und Python. Sie läuft über Flask. 
           Den Quellcode kann man jederzeit auf <a href="https://github.com/em-ge/emilgerlach.com" target="_blank">Github</a> einsehen.<br> 
           Um mehr über die Programmiersprachen zu lernen, die ich für diese Website benutzte habe, klicke <a href="https://emilgerlach.com/language-breakdown">hier</a>.<br>
-          Bei Fragen, Kritik, Verbesserungsvorschläge oder sonstigen Wünschen kann man mich über diese Email erreichen<a href="mailto:info@emilgerlach.com">info@emilgerlach.com</a>.
+          Bei Fragen, Kritik, Verbesserungsvorschläge oder sonstigen Wünschen kann man mich über diese Email erreichen: <a href="mailto:info@emilgerlach.com">info@emilgerlach.com</a>
         </p>
       </div>
 
@@ -222,8 +222,25 @@
 
     <div class="footer">
       <div class="footer-text">
-        <p class="made-with-love-by">made with 💙 by emil gerlach</p>
-        <!-- <p class="designed-and-developed">designed and developed by emil gerlach</p> -->
+        <div class="made-with-love-by collapsible">
+          made with 💙 by emil gerlach<br />
+          <div class="just-someone-who">
+            - just someone who
+            <button class="collapsible-toggle-btn readmore">
+              (click here to read more)
+            </button>
+
+            <div class="content-wrapper">
+              <div class="content">
+                enjoys: music, history, programming, jesus, chess, making
+                things, family and friends,<br />
+                guitars, dampfnudeln (a german food), science, internet,
+                learning new things, human rights, nature, and more...
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="footer-text-things">
           &copy; 2025 Emil Gerlach<br>
           <div class="up-arrow-footer">

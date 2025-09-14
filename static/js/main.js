@@ -153,14 +153,17 @@ window.addEventListener("load", () => {
     btn.addEventListener("click", () => {
       container.classList.toggle("open");
 
-      // Pfeil drehen
-      if (container.classList.contains("open")) {
-        btn.style.transform = "rotate(-180deg)";
-      } else {
-        btn.style.transform = "rotate(0deg)";
+      if (btn.classList.contains("readmore")) {
+        if (container.classList.contains("open")) {
+          btn.textContent = "(click here to read less)";
+        } else {
+          btn.textContent = "(click here to read more)";
+        }
       }
     });
   });
+
+  // Things I’ll need later (probably never):
 
   // let counter = 1;
 
