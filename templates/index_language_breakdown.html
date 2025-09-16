@@ -127,8 +127,17 @@
                 </svg>
               </label>
               <div class="sidebar-links-container">
+                <a href="#programming-languages"
+                  >what are programming languages?</a
+                >
                 <a href="#language-breakdown">language breakdown</a>
-                <!-- <a href="#note">note</a> -->
+                <a href="#about the languages">about the languages</a>
+                <div class="sub-links">
+                  <a href="#html">HTML</a>
+                  <a href="#css">css</a>
+                  <a href="#javascript">JaveScript</a>
+                  <a href="#python">Python</a>
+                </div>
                 <div class="sidebar-special-content">
                   <a href="/blog">My Blog</a>
                   <a href="/dev">Dev</a>
@@ -155,27 +164,75 @@
       </p>
 
       <div class="sub-heading">
-        <h2 id="language-breakdown">language breakdown</h2>
+        <h2 id="programming-languages">what are programming languages?</h2>
       </div>
-      <div class="languages-bar-container">
-        <div class="bar html" style="width: 81%"></div>
-        <div class="bar css" style="width: 11.4%"></div>
-        <div class="bar js" style="width: 6%"></div>
-        <div class="bar python" style="width: 1.4%"></div>
-        <div class="bar other" style="width: 0.2%"></div>
+      <p class="normal-text">
+        A programming language is a formal system for expressing computations
+        and instructions that a computer can execute. It gives humans a way to
+        describe algorithms, data structures and control flow in a structured,
+        machine-readable form. Programming languages let you transform input
+        into output, automate tasks, process data, and build software from small
+        scripts to large applications.
+      </p>
+
+      <div class="sub-heading">
+        <h2 id="language-breakdown">language breakdown of my website</h2>
       </div>
-      <div class="languages-text">
-        <div class="bar-text html-text">HTML - 81.0%</div>
-        <div class="bar-text css-text">CSS - 11.4%</div>
-        <div class="bar-text js-text">JavaScript - 6.0%</div>
-        <div class="bar-text python-text">Python - 1.4%</div>
-        <div class="bar-text other-text">Other - 0.2%</div>
+      <div style="margin-bottom: 1.2em">
+        <div class="languages-bar-container">
+          <div class="bar html" id="html" style="width: 82.6%"></div>
+          <div class="bar css" id="css" style="width: 11.3%"></div>
+          <div class="bar js" id="js" style="width: 4.8%"></div>
+          <div class="bar python" id="python" style="width: 1.1%"></div>
+          <div class="bar other" id="other" style="width: 0.2%"></div>
+        </div>
+        <div class="languages-text">
+          <div class="bar-text html-text" id="html-text">HTML - 82.6%</div>
+          <div class="bar-text css-text" id="css-text">CSS - 11.3%</div>
+          <div class="bar-text js-text" id="js-text">JavaScript - 4.8%</div>
+          <div class="bar-text python-text" id="python-text">Python - 1.1%</div>
+          <div class="bar-text other-text" id="other-text">Other - 0.2%</div>
+        </div>
       </div>
 
-      <!-- <div id="note" class="note">
-        <b>note:</b>
-        some notes how its done 
-      -->
+      <div class="sub-heading">
+        <h2 id="about-languages">about the languages</h2>
+      </div>
+      <div class="normal-text">
+        <h3 id="html">HTML</h3>
+        <p>
+          HTML (HyperText Markup Language) is the structural foundation of web
+          pages. It defines the semantic structure of content - headings,
+          paragraphs, lists, images, links and more - so browsers and search
+          engines can understand what each piece of content represents. It is
+          not a programming language in the traditional sense; rather, it is a
+          markup language that describes the structure and semantics of web
+          content.
+        </p>
+
+        <h3 id="css">CSS</h3>
+        <p>
+          CSS (Cascading Style Sheets) is a stylesheet language used to control
+          presentation, layout and responsive behavior of HTML. It is also not a
+          programming language - it is declarative: you describe how elements
+          should look and the browser applies those rules.
+        </p>
+
+        <h3 id="javascript">JavaScript</h3>
+        <p>
+          JavaScript is a programming language that runs in browsers (and on
+          servers). It adds interactivity and client-side logic - DOM updates,
+          event handling and network requests - complementing HTML and CSS.
+        </p>
+
+        <h3 id="python">Python</h3>
+        <p>
+          Python is a general-purpose programming language often used on
+          servers. I use Flask for the website - a lightweight Python
+          microframework for building web backends: define routes, handle
+          requests, render templates, and serve APIs.
+        </p>
+      </div>
     </div>
 
     <div class="footer">
@@ -211,7 +268,7 @@
     </div>
 
     <script src="../static/js/main.js" defer></script>
-    <script src="../static/js/randomBibleVerse.js" defer></script>
+    <script src="../static/js/languageBreakdown.js" defer></script>
     <script
       defer
       src="https://analytics.umami.is/script.js"

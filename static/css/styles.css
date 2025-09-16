@@ -763,6 +763,10 @@ h3[id] {
   color: #ffe05a;
 }
 
+.js-text ~ .js {
+  transform: scale(1.1);
+}
+
 .html {
   background-color: #e34c26;
   color: #e34c26;
