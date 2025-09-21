@@ -3,49 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
 
     <meta
-      name="keywords"
-      content="dev, Emil Gerlach, coding, programming, Emil Gerlach Dev"
+      name="description"
+      content="Explore Strudel, a live coding music editor that lets you create and manipulate music in real-time through code."
     />
-    <meta name="description" content="Dev" />
 
     <meta name="theme-color" content="" />
     <meta
       name="apple-mobile-web-app-status-bar-style"
       content="black-translucent"
     />
+
     <meta name="author" content="Emil Gerlach" />
 
-    <title>EmilGerlach | Dev</title>
-    <link
-      rel="preload"
-      href="../static/css/styles.css"
-      as="style"
-      onload="this.rel='stylesheet'"
-    />
-    <noscript
-      ><link rel="stylesheet" href="../static/css/styles.css"
-    /></noscript>
+    <title>Emil Gerlach | About Dev and Programming</title>
+    <link rel="stylesheet" href="../static/css/styles.css" />
 
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="../static/favicon_io/apple-touch-icon.png"
+      href="../static/favicons/favicon_io/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../static/favicon_io/favicon-32x32.png"
+      href="../static/favicons/favicon_io/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="../static/favicon_io/favicon-16x16.png"
+      href="../static/favicons/favicon_io/favicon-16x16.png"
     />
-    <link rel="manifest" href="../static/favicon_io/site.webmanifest" />
+    <link
+      rel="manifest"
+      href="../static/favicons/favicon_io/site.webmanifest"
+    />
   </head>
 
   <body>
@@ -122,11 +118,11 @@
                 </svg>
               </label>
               <div class="sidebar-links-container">
-                <a href="#dev-meaning">Meaning of 'Dev'</a>
-                <a href="#technical-terms">Technical Terms in Dev</a>
-                <a href="#short-quote">Short Quote</a>
+                <a href="#dev-meaning">meaning of 'dev' and 'programming'</a>
+                <a href="#how-to-start">how to start coding?</a>
+                <a href="#technical-terms">technical terms in dev</a>
                 <div class="sidebar-special-content">
-                  <a href="/blog">My Blog</a>
+                  <a href="/blog">Blog</a>
                   <a href="/language-breakdown">Language Breakdown</a>
                   <a href="/random-bible-verse">Random Bible Verse</a>
                 </div>
@@ -134,47 +130,54 @@
             </div>
           </nav>
         </div>
-        <div style="display: flex">
+        <div class="parent">
           <nav aria-label="breadcrumb" class="breadcrumb">
             <ol>
               <li><a href="https://emilgerlach.com">Home</a></li>
-              <li aria-current="page">Dev</li>
+              <li><a href="https://emilgerlach.com/blog">Blog</a></li>
+              <li aria-current="page">About Dev and Progamming</li>
             </ol>
           </nav>
         </div>
       </div>
 
-      <h1>Dev</h1>
-      <p class="normal-text">
-        This is my subpage about Dev. Here, you'll find technical terms,
-        concepts, and much more to development.
-      </p>
+      <h1>About Dev</h1>
 
       <div class="sub-heading">
-        <h2 id="dev-meaning">What Does 'Dev' Mean?</h2>
+        <h2 id="dev-meaning">what does 'dev' and 'programming' mean?</h2>
       </div>
       <p class="normal-text">
         'Dev' is short for 'Development' or 'Developer.' When you develop
         something, you create software or digital solutions.<br />
-        You can also say 'programming' or 'coding'. <br /><br />
-        But how to start?<br />
-        I recommend learning to code with
-        <a href="https://developer.apple.com/swift-playgrounds/" target="_blank"
-          >Swift Playgrounds</a
-        >. It's an excellent tool for beginners, offering an interactive way to
-        learn the basics of programming. With Swift Playgrounds, you can build a
-        solid foundation in coding, which is essential for developing logical
-        thinking and problem-solving skills.
+        Programming is the process of writing instructions that tell a computer
+        what to do. It uses programming languages to solve problems, automate
+        tasks, or build software. Good programming blends logic, creativity, and
+        testing to create reliable, useful programs.
+      </p>
+
+      <div class="sub-heading">
+        <h2 id="how-to-start">how to start coding?</h2>
+      </div>
+      <p class="normal-text">
+        Start small: choose a beginner-friendly language (e.g., Python or
+        JavaScript), set up a simple development environment, and follow a short
+        tutorial that produces a working project. Practice regularly with
+        mini-projects (calculator, to-do list, small game), read and write
+        clear, commented code, and use platforms like GitHub, Stack Overflow, or
+        local meetups for feedback. Important: stick with it, treat mistakes as
+        learning opportunities, and gradually deepen core concepts (variables,
+        control structures, functions, simple data structures). Once you know
+        the absolute basics (functions, loops, variables, ...), just begin with
+        your own small project - learning by building is the fastest way to
+        improve!
       </p>
 
       <div class="sub-heading">
         <h2 id="technical-terms">important technical terms in dev</h2>
       </div>
-      <p class="normal-text">
+      <div class="normal-text">
         In the world of development, there are several key technical terms. I
-        will try to explain some of them briefly.
-      </p>
-      <div class="terms-div">
+        will try to explain some of them briefly:
         <div class="term">
           <strong>Algorithm:</strong><br />
           A step-by-step procedure for solving a problem or completing a task.
@@ -233,20 +236,18 @@
           code. A popular IDE is Visual Studio Code.
         </div>
       </div>
-      <p class="normal-text">
-        These terms are important, in my opinion, for starting to learn
-        programming.
-      </p>
 
       <div class="sub-heading">
-        <h2 id="short-quote">Short Quote</h2>
+        <h2 id="short-quote">just a short quote:</h2>
       </div>
       <blockquote>
         Computer is always right and makes no mistakes.<br />
         It just follows instructions - even the wrong ones.
       </blockquote>
 
-      <!-- My Projects:-->
+      <p class="blog-ending">
+        thanks for reading - last changes: 21. September 2025
+      </p>
     </div>
 
     <div class="footer">

@@ -1,0 +1,114 @@
+.languages-bar-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.12em;
+  margin-top: 0.6em;
+  cursor: pointer;
+}
+
+.languages-text {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.2em;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.bar {
+  height: 0.8em;
+}
+
+.bar-text {
+  cursor: pointer;
+  padding: 0.2em;
+}
+
+.bar-text:hover {
+  background-color: var(--select-background-color);
+  transition: background-color 0.5s;
+  border-radius: 5px;
+}
+
+.js {
+  background-color: #ffe05a;
+}
+
+.js:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.js-text {
+  color: #ffe05a;
+}
+
+.js-text ~ .js {
+  transform: scale(1.1);
+}
+
+.html {
+  background-color: #e34c26;
+  color: #e34c26;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.html:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+.html-text {
+  color: #e34c26;
+}
+
+.css {
+  background-color: #663399;
+}
+
+.css:hover {
+  transform: scale(1.09);
+  transition: transform 0.3s ease;
+}
+
+.css-text {
+  color: #663399;
+}
+
+.python {
+  background-color: #3572a5;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.python:hover {
+  transform: scale(1.18);
+  transition: transform 0.3s ease;
+}
+
+.python-text {
+  color: #3572a5;
+}
+
+.makefile {
+  background-color: var(--other-background-color);
+}
+
+.makefile:hover {
+  transform: scale(1.25);
+  transition: transform 0.3s ease;
+}
+
+.makefile-text {
+  color: var(--other-background-color);
+}
+
+@media (max-width: 500px) {
+  .bar {
+    height: 0.6em;
+  }
+
+  .bar:hover {
+    transform: scale(1);
+  }
+}

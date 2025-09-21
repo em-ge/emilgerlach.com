@@ -54,6 +54,13 @@ def random_bible_verse():
     return render_template("index_random_bible_verse.html")
 
 
+@app.route("/blog/about-dev-and-programming")
+def about_dev():
+    return render_template(
+        "index_dev.html",
+    )
+
+
 @app.route("/static/data/bible_en_kjv.json")
 def download_file():
     return send_from_directory(
@@ -64,13 +71,6 @@ def download_file():
 @app.route("/language-breakdown")
 def language_breakdown():
     return render_template("index_language_breakdown.html")
-
-
-@app.route("/dev")
-def dev():
-    return render_template(
-        "index_dev.html",
-    )
 
 
 @app.errorhandler(404)

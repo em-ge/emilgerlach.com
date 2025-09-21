@@ -6,8 +6,8 @@ const css = document.getElementById("css");
 const cssTxt = document.getElementById("css-text");
 const py = document.getElementById("python");
 const pyTxt = document.getElementById("python-text");
-const other = document.getElementById("other");
-const otherTxt = document.getElementById("other-text");
+const makefile = document.getElementById("makefile");
+const makefileTxt = document.getElementById("makefile-text");
 
 jsTxt.addEventListener("mouseenter", () => {
   js.style.transform = "scale(1.1)";
@@ -37,9 +37,9 @@ pyTxt.addEventListener("mouseleave", () => {
   py.style.transform = "scale(1.0)";
 });
 
-otherTxt.addEventListener("mouseenter", () => {
-  other.style.transform = "scale(1.25)";
+makefileTxt.addEventListener("mouseenter", () => {
+  makefile.style.transform = "scale(1.25)";
 });
-otherTxt.addEventListener("mouseleave", () => {
-  other.style.cotransformlor = "scale(1.0)";
+makefileTxt.addEventListener("mouseleave", () => {
+  makefile.style.transform = "scale(1.0)";
 });

@@ -11,3 +11,5 @@ config_server.txt
 notes/
 
 templates/.DS_Store
+
+wip/index_faith.html

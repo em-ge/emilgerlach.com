@@ -8,7 +8,7 @@
       name="keywords"
       content="Emil Gerlach, Gerlach, Emil Gerlach Blog, Blog, Emil Blog"
     />
-    <meta name="description" content="My Blog" />
+    <meta name="description" content="Blog" />
 
     <meta name="theme-color" content="" />
     <meta
@@ -17,17 +17,9 @@
     />
     <meta name="author" content="Emil Gerlach" />
 
-    <title>EmilGerlach | My Blog</title>
+    <title>EmilGerlach | Blog</title>
 
-    <link
-      rel="preload"
-      href="../static/css/styles.css"
-      as="style"
-      onload="this.rel='stylesheet'"
-    />
-    <noscript
-      ><link rel="stylesheet" href="../static/css/styles.css"
-    /></noscript>
+    <link rel="stylesheet" href="../static/css/styles.css" />
 
     <link
       rel="apple-touch-icon"
@@ -50,6 +42,13 @@
       rel="manifest"
       href="../static/favicons/favicon_io/site.webmanifest"
     />
+
+    <style>
+      .home-button {
+        width: 2.2em;
+        height: 2.2em;
+      }
+    </style>
   </head>
 
   <body>
@@ -129,7 +128,6 @@
                 <a href="#article">Article</a>
                 <a href="#news">News/Tutorials/Articles</a>
                 <div class="sidebar-special-content">
-                  <a href="/dev">Dev</a>
                   <a href="/language-breakdown">Language Breakdown</a>
                   <a href="/random-bible-verse">Random Bible Verse</a>
                 </div>
@@ -137,7 +135,7 @@
             </div>
           </nav>
         </div>
-        <div style="display: flex">
+        <div class="parent">
           <nav aria-label="breadcrumb" class="breadcrumb">
             <ol>
               <li><a href="https://emilgerlach.com">Home</a></li>
@@ -147,7 +145,7 @@
         </div>
       </div>
 
-      <h1>My Blog</h1>
+      <h1>Blog</h1>
       <p class="normal-text">
         Awesome, you found this page! <br />
         Welcome to my blog, where you can find news and articles about things
@@ -165,6 +163,17 @@
         hear from you!
       </p>
       <div class="n-t-a">
+        <a class="n-t-a-container" href="/blog/about-dev-and-programming">
+          <div class="n-t-a-topic">Dev, Prorgamming</div>
+          <div class="n-t-a-heading">About Dev and Porgramming</div>
+          <div class="n-t-a-descr">
+            An introduction to the world of development: what 'dev' and
+            'programming' really mean, how beginners can start coding step by
+            step, and a clear overview of common technical terms every developer
+            should know...
+          </div>
+        </a>
+
         <a class="n-t-a-container" href="/blog/benefits-of-playing-chess">
           <div class="n-t-a-topic">Chess</div>
           <div class="n-t-a-heading">

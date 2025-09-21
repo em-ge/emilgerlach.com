@@ -1,4 +1,5 @@
 window.addEventListener("load", () => {
+  document.body.style.backgroundColor = "var(--background-color)";
   // reveal
   const els = document.querySelectorAll(".reveal");
   const io = new IntersectionObserver(

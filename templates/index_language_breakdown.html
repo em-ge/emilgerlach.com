@@ -18,17 +18,10 @@
 
     <meta name="author" content="Emil Gerlach" />
 
-    <title>Emil Gerlach</title>
+    <title>Emil Gerlach | Language Breakdown</title>
 
-    <link
-      rel="preload"
-      href="../static/css/styles.css"
-      as="style"
-      onload="this.rel='stylesheet'"
-    />
-    <noscript
-      ><link rel="stylesheet" href="../static/css/styles.css"
-    /></noscript>
+    <link rel="stylesheet" href="../static/css/styles.css" />
+    <link rel="stylesheet" href="../static/css/styles_language_breakdown.css" />
 
     <link
       rel="apple-touch-icon"
@@ -136,18 +129,18 @@
                   <a href="#html">HTML</a>
                   <a href="#css">css</a>
                   <a href="#javascript">JaveScript</a>
+                  <a href="#makefile">Makefile</a>
                   <a href="#python">Python</a>
                 </div>
                 <div class="sidebar-special-content">
-                  <a href="/blog">My Blog</a>
-                  <a href="/dev">Dev</a>
+                  <a href="/blog">Blog</a>
                   <a href="/random-bible-verse">Random Bible Verse</a>
                 </div>
               </div>
             </div>
           </nav>
         </div>
-        <div style="display: flex">
+        <div class="parent">
           <nav aria-label="breadcrumb" class="breadcrumb">
             <ol>
               <li><a href="https://emilgerlach.com">Home</a></li>
@@ -159,8 +152,7 @@
 
       <h1>A Language Breakdown</h1>
       <p class="normal-text">
-        This graphic shows a breakdown of the programming languages used to
-        build this website.
+        This site showcases the programming languages I use to build it.
       </p>
 
       <div class="sub-heading">
@@ -176,22 +168,24 @@
       </p>
 
       <div class="sub-heading">
-        <h2 id="language-breakdown">language breakdown of my website</h2>
+        <h2 id="language-breakdown">language breakdown of my website:</h2>
       </div>
       <div style="margin-bottom: 1.2em">
         <div class="languages-bar-container">
-          <div class="bar html" id="html" style="width: 82.6%"></div>
-          <div class="bar css" id="css" style="width: 11.3%"></div>
-          <div class="bar js" id="js" style="width: 4.8%"></div>
+          <div class="bar html" id="html" style="width: 81.4%"></div>
+          <div class="bar css" id="css" style="width: 10.8%"></div>
+          <div class="bar js" id="js" style="width: 5.2%"></div>
+          <div class="bar makefile" id="makefile" style="width: 1.5%"></div>
           <div class="bar python" id="python" style="width: 1.1%"></div>
-          <div class="bar other" id="other" style="width: 0.2%"></div>
         </div>
         <div class="languages-text">
-          <div class="bar-text html-text" id="html-text">HTML - 82.6%</div>
-          <div class="bar-text css-text" id="css-text">CSS - 11.3%</div>
-          <div class="bar-text js-text" id="js-text">JavaScript - 4.8%</div>
+          <div class="bar-text html-text" id="html-text">HTML - 81.4%</div>
+          <div class="bar-text css-text" id="css-text">CSS - 10.8%</div>
+          <div class="bar-text js-text" id="js-text">JavaScript - 5.2%</div>
+          <div class="bar-text makefile-text" id="makefile-text">
+            Makefile - 1.5%
+          </div>
           <div class="bar-text python-text" id="python-text">Python - 1.1%</div>
-          <div class="bar-text other-text" id="other-text">Other - 0.2%</div>
         </div>
       </div>
 
@@ -223,6 +217,16 @@
           JavaScript is a programming language that runs in browsers (and on
           servers). It adds interactivity and client-side logic - DOM updates,
           event handling and network requests - complementing HTML and CSS.
+        </p>
+
+        <h3 id="makefile">Makefile</h3>
+        <p>
+          Makefile is a plain-text file used by the `make` tool to automate
+          repetitive tasks - compiling code, running tests, and other build or
+          deployment steps. It defines targets, dependencies and commands so
+          `make` runs the necessary steps in the correct order. It's a
+          domain-specific automation format rather than a general-purpose
+          programming language.
         </p>
 
         <h3 id="python">Python</h3>
