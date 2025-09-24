@@ -24,11 +24,6 @@ def article_strudel():
     return render_template("index_strudel.html")
 
 
-# @app.route("/blog/grenzen-schmuck-und-uhrenindustrie-in-pf")
-# def article_grenzen_schmuck_und_uhrenindustrie_in_pf():
-#     return render_template("index_grenzen_schmuck_und_uhrenindustrie_in_pf.html")
-
-
 @app.route("/blog/portus-wie-die-roemer-wohnten")
 def article_portus_wie_die_roemer_wohnten():
     return render_template("index_portus_wie_die_roemer_wohnten.html")
@@ -71,6 +66,11 @@ def download_file():
 @app.route("/language-breakdown")
 def language_breakdown():
     return render_template("index_language_breakdown.html")
+
+
+@app.route("/sitemap.xml")
+def sitemap():
+    return send_from_directory(".", "sitemap.xml")
 
 
 @app.errorhandler(404)

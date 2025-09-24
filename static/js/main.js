@@ -2,6 +2,7 @@ window.addEventListener("load", () => {
   document.body.style.backgroundColor = "var(--background-color)";
   // reveal
   const els = document.querySelectorAll(".reveal");
+  let threshold = window.innerWidth <= 768 ? 0.14 : 0.2;
   const io = new IntersectionObserver(
     (entries, observer) => {
       entries.forEach((entry) => {
@@ -11,7 +12,7 @@ window.addEventListener("load", () => {
         }
       });
     },
-    { threshold: 0.14 }
+    { threshold: threshold }
   );
   els.forEach((el) => io.observe(el));
 
