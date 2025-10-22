@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@bibleup/bibleup": "^1.1.0"
+  }
+}

@@ -10,6 +10,12 @@ config_server.txt
 
 notes/
 
-templates/.DS_Store
+templates/.DS_Store\
 
 wip/index_faith.html
+
+wip/index_why_i_believe.html
+
+wip/index_what_i_believe.html
+
+node_modules

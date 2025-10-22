@@ -318,7 +318,7 @@ h3[id] {
   margin-top: -2em;
   padding: 0.5em;
   align-items: center;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
   font-style: italic;
   border-top: 2px solid dimgrey;
@@ -858,6 +858,7 @@ h3[id] {
 .disclaimer {
   margin-top: 2.2em;
   font-size: 17px;
+  line-height: 1.1;
 }
 
 @media (max-width: 500px) {
@@ -980,22 +981,6 @@ h3[id] {
 
   .img-container {
     width: 100% !important;
-  }
-
-  .uhrenwerkstatt-img {
-    width: 100%;
-  }
-
-  .languages-text {
-    font-size: 14px;
-  }
-
-  .bar {
-    height: 0.6em;
-  }
-
-  .bar:hover {
-    transform: scale(1);
   }
 
   .emoji-404 {

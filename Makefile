@@ -1,25 +1,3 @@
-# .PHONY: *
-
-# zip:
-# 	rm -f emilgerlach.com.zip && zip -r emilgerlach.com.zip . -x '*.git*' -x .DS_Store -x Makefile -x "notes/*"
-	
-# upload: zip
-# 	scp emilgerlach.com.zip emil@dev:~/ && \
-# 	ssh emil@dev "rm -rf emilgerlach.com && unzip emilgerlach.com.zip -d emilgerlach.com" && \
-# 	rm -f emilgerlach.com.zip
-
-# deploy: upload
-# 	ssh emil@dev "kill $$(lsof -t -i:11000) || cd emilgerlach.com && ./start.sh &"
-# Makefile: sicheres Deploy (scp + remote unzip + restart)
-
-
-# Makefile: sicheres Deploy (scp + remote unzip + restart) — robust gegen alte Prozesse
-
-# Makefile: Sicheres Deploy (zip + scp + remote unzip + restart)
-# Makefile: Sicheres Deploy (zip + scp + remote unzip + restart)
-
-# Makefile: sicheres Deploy (scp + remote unzip + restart)
-
 ZIPFILE    := emilgerlach.com.zip
 SERVER     := emil@dev
 TARGET_DIR := emilgerlach.com
@@ -36,7 +14,8 @@ zip:
 	  -x '*.git*' \
 	  -x .DS_Store \
 	  -x Makefile \
-	  -x "notes/*"
+	  -x node_modules/** \
+	  -x "notes/**"
 
 # 2) Hochladen, entpacken, Prozess neu starten
 upload: zip

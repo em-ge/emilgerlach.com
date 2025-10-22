@@ -111,4 +111,8 @@
   .bar:hover {
     transform: scale(1);
   }
+
+  .languages-text {
+    font-size: 14px;
+  }
 }
