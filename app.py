@@ -18,6 +18,10 @@ def main():
 def blog():
     return render_template("index_blog.html")
 
+@app.route("/blog/why-history-still-matters")
+def article_why_history_matters():
+    return render_template("index_why_history_matters.html")
+
 
 @app.route("/blog/strudel")
 def article_strudel():

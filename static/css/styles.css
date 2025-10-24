@@ -260,7 +260,7 @@ h3[id] {
 
 .sidebar-links-container a {
   display: block;
-  white-space: nowrap;
+  white-space: normal;
   text-decoration: none;
   padding-left: 1.5em;
   width: 100%;
@@ -269,6 +269,7 @@ h3[id] {
   box-sizing: border-box;
   padding-left: 1.5em;
   padding-right: 0.3em;
+  overflow-wrap: break-word;
 }
 
 .sidebar-links-container a:hover {

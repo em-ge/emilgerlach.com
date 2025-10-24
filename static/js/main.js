@@ -165,7 +165,7 @@ window.addEventListener("load", () => {
     });
   });
 
-  // Things I’ll need later (probably never):
+  // Things I'll need later (probably never):
 
   // let counter = 1;
 

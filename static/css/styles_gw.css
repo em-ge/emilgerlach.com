@@ -10,7 +10,9 @@
   letter-spacing: 0.01em;
 }
 
-.uhrenwerkstatt-img {
+.uhrenwerkstatt-img,
+.werkbank-img,
+.zuenderherstellung-img {
   width: 100%;
   height: auto;
 }
@@ -20,6 +22,8 @@
   align-items: flex-start;
   gap: 1rem;
   width: fit-content;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 .magazin-row .img-container {
@@ -95,13 +99,20 @@
 }
 
 .werkbank-img {
-  width: 100%;
-  height: auto;
   margin-bottom: -0.5em;
 }
 
 .img-container-werkbank {
-  margin: 0 auto 3em;
+  margin: 0 auto 7em;
+  width: 75%;
+}
+
+.zuenderherstellung-img {
+  margin-bottom: -0.5em;
+}
+
+.img-container-zuenderherstellung {
+  margin: 1em auto 4em;
   width: 75%;
 }
 
