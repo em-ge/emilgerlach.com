@@ -13,6 +13,10 @@ app = Flask(__name__)
 def main():
     return render_template("index.html")
 
+@app.route("/pforzheimer-schmuck-und-uhrenindustrie-im-wandel-der-zeit")
+def schmuck_und_uhrenindustrie_pforzheim():
+    return render_template("index_schmuck_uhrenindustrie_pforzheim.html")
+
 
 @app.route("/blog")
 def blog():

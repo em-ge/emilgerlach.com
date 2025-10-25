@@ -66,6 +66,7 @@ p {
 a {
   color: var(--text-color);
   text-decoration: underline;
+  white-space: nowrap;
 }
 
 a:hover {
@@ -121,7 +122,7 @@ h3::selection {
 }
 
 [id] {
-  scroll-margin-top: 3.8em;
+  scroll-margin-top: 4em;
 }
 
 .note[id] {
@@ -670,6 +671,7 @@ h3[id] {
   color: inherit;
   cursor: pointer;
   transition: transform 0.3s ease, border-color 0.5s ease;
+  white-space: normal;
 }
 
 .n-t-a-container:hover {
@@ -857,9 +859,10 @@ h3[id] {
 }
 
 .disclaimer {
-  margin-top: 2.2em;
+  margin-top: 2em;
   font-size: 17px;
   line-height: 1.1;
+  margin-bottom: 3em;
 }
 
 @media (max-width: 500px) {

@@ -1,5 +1,9 @@
+[id] {
+  scroll-margin-top: 7em;
+}
+
 .gw-heading {
-  margin-top: 4.5em;
+  margin-top: 5em;
   margin-bottom: 5em;
   color: royalblue;
   font-size: clamp(30px, 10vw, 70px);
@@ -15,6 +19,15 @@
 .zuenderherstellung-img {
   width: 100%;
   height: auto;
+}
+
+.werkbank-img {
+  margin-bottom: -0.5em;
+}
+
+.img-container-werkbank {
+  margin: 0 auto 7em;
+  width: 75%;
 }
 
 .magazin-row {
@@ -98,15 +111,6 @@
   opacity: 1;
 }
 
-.werkbank-img {
-  margin-bottom: -0.5em;
-}
-
-.img-container-werkbank {
-  margin: 0 auto 7em;
-  width: 75%;
-}
-
 .zuenderherstellung-img {
   margin-bottom: -0.5em;
 }
@@ -117,8 +121,12 @@
 }
 
 @media (max-width: 500px) {
+  [id] {
+    scroll-margin-top: 9em;
+  }
+
   .gw-heading {
-    margin-top: 6em;
+    margin-top: 8em;
     margin-bottom: 7em;
   }
 
@@ -126,8 +134,16 @@
     width: 100%;
   }
 
+  .img-container-werkbank {
+    margin-top: 4em;
+  }
+
   .magazin-download-label {
     opacity: 1;
+  }
+
+  .img-container-zuenderherstellung {
+    width: 100%;
   }
 
   .img-container-werkbank {
