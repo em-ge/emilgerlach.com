@@ -8,14 +8,12 @@ config_server.txt
 
 .DS_Store
 
-notes/
-
 templates/.DS_Store\
 
-wip/index_faith.html
+static/.DS_Store\
 
-wip/index_why_i_believe.html
+notes/
 
-wip/index_what_i_believe.html
+wip/
 
 node_modules

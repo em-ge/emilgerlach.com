@@ -54,6 +54,7 @@ upload: zip
 # 3) Komplettes Deploy (upload + remote start)
 deploy: upload
 	@echo "Deploy finished."
+	@date "+%Y-%m-%d %H:%M:%S"
 
 # 4) Nur neu starten (kein Upload)
 restart:
