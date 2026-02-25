@@ -15,7 +15,9 @@ body {
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
-  font-variation-settings: "XROT" 0, "YROT" 0;
+  font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
   background-color: var(--background-color);
   color: var(--text-color);
   line-height: 1.6;
@@ -23,6 +25,7 @@ body {
   min-height: 100vh;
   opacity: 0;
   animation: fadeIn 0.5s ease-in forwards !important;
+  scroll-behavior: smooth;
 }
 
 .body-without-footer {
@@ -378,7 +381,8 @@ h3[id] {
 .reveal {
   opacity: 0;
   transform: translateY(14px);
-  transition: opacity 2s cubic-bezier(0.2, 0.9, 0.3, 1),
+  transition:
+    opacity 2s cubic-bezier(0.2, 0.9, 0.3, 1),
     transform 1s cubic-bezier(0.2, 0.9, 0.3, 1);
 }
 
@@ -447,7 +451,9 @@ h3[id] {
   margin-left: 2em;
   transform: translateY(-20px);
   opacity: 0;
-  transition: transform 0.5s ease, opacity 0.5s ease;
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease;
 }
 
 .open .content-wrapper {
@@ -670,7 +676,9 @@ h3[id] {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-  transition: transform 0.3s ease, border-color 0.5s ease;
+  transition:
+    transform 0.3s ease,
+    border-color 0.5s ease;
   white-space: normal;
 }
 
@@ -743,6 +751,26 @@ h3[id] {
   font-size: 19px;
   margin-top: 0.1em;
   margin-bottom: 1.5em;
+}
+
+.music-player {
+  margin-bottom: 0.5em;
+}
+
+input[type="range"] {
+  width: 17em;
+  background: transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #444;
+  cursor: pointer;
+  color: royalblue;
+  transition: color 0.3s !important;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  transform: scale(1.2);
 }
 
 .bibleverse {
@@ -961,7 +989,8 @@ h3[id] {
   .reveal {
     opacity: 0;
     transform: translateY(14px);
-    transition: opacity 1s cubic-bezier(0.2, 0.9, 0.3, 1),
+    transition:
+      opacity 1s cubic-bezier(0.2, 0.9, 0.3, 1),
       transform 1s cubic-bezier(0.2, 0.9, 0.3, 1);
   }
 
