@@ -15,7 +15,8 @@ zip:
 	  -x .DS_Store \
 	  -x Makefile \
 	  -x node_modules/** \
-	  -x "notes/**"
+	  -x "notes/**" \
+	  -x "wip/**"
 
 # 2) Hochladen, entpacken, Prozess neu starten
 upload: zip
