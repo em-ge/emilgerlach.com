@@ -32,6 +32,10 @@ def blog():
 def article_why_history_matters():
     return render_template("index_why_history_matters.html")
 
+@app.route("/blog/historical-reliability-of-the-bible")
+def article_historical_reliability_of_the_bible():
+    return render_template("index_historical_reliability_bible.html")
+
 
 @app.route("/blog/strudel")
 def article_strudel():
@@ -58,16 +62,16 @@ def article_founding_and_legacy_of_rome():
     return render_template("index_founding_and_legacy_of_rome.html")
 
 
-@app.route("/random-bible-verse")
-def random_bible_verse():
-    return render_template("index_random_bible_verse.html")
-
-
 @app.route("/blog/about-dev-and-programming")
 def about_dev():
     return render_template(
         "index_dev.html",
     )
+
+
+@app.route("/random-bible-verse")
+def random_bible_verse():
+    return render_template("index_random_bible_verse.html")
 
 
 @app.route("/static/data/bible_en_kjv.json")

@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+
+    <meta
+      name="description"
+      content="Why history still matters and why it's anything but boring - a look at the relevance of the past for today."
+    />
+
+    <meta name="theme-color" content="" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <meta name="author" content="Emil Gerlach" />
+
+    <title>Emil Gerlach | The Historical Reliability of the Bible</title>
+    <link rel="stylesheet" href="../static/css/styles.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../static/favicons/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../static/favicons/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../static/favicons/favicon_io/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="../static/favicons/favicon_io/site.webmanifest"
+    />
+  </head>
+
+  <body>
+    <div class="body-without-footer">
+      <div class="reading-progress"></div>
+      <div class="navbar" id="navbar">
+        <div class="navbar-btns">
+          <div
+            id="lightmode-darkmode-btn"
+            class="lightmode-darkmode-btn"
+            alt="lightmode/darkmode btn"
+            title="switch between darkmode and lightmode"
+            onclick="toggleDarkMode()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+              />
+            </svg>
+          </div>
+          <div id="homeLink" class="home-btn" alt="home btn" title="home">
+            <a href="https://emilgerlach.com">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                />
+              </svg>
+            </a>
+          </div>
+          <nav>
+            <input type="checkbox" id="sidebar-active" />
+            <label for="sidebar-active" class="open-sidebar-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="sidebar-container">
+              <label for="sidebar-active" class="close-sidebar-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32"
+                  viewBox="0 -960 960 960"
+                  width="32"
+                >
+                  <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                  />
+                </svg>
+              </label>
+              <div class="sidebar-links-container">
+                <a href="#one-of-a-kind-book">A One-of-a-Kind Book</a>
+                <a href="#what-makes-historical-source-reliable"
+                  >What Makes a Historical Source Reliable?</a
+                >
+                <a href="#transmission-new-testament"
+                  >The Transmission of the New Testament</a
+                >
+                <a href="#transmission-old-testament"
+                  >The Transmission of the Old Testament</a
+                >
+                <a href="#authors">The Authors and Their Credibility</a>
+                <a href="#archaeological-evidence">Archaeological Evidence</a>
+                <a href="#prophecies">Prophecies and Their Fulfillment</a>
+                <a href="#conclusion">Conclusion</a>
+                <a href="#sources">Sources</a>
+
+                <div class="sidebar-special-content">
+                  <a href="/blog">Blog</a>
+                  <a href="/language-breakdown">Language Breakdown</a>
+                  <a href="/random-bible-verse">Random Bible Verse</a>
+                  <a
+                    href="/pforzheimer-schmuck-und-uhrenindustrie-im-wandel-der-zeit"
+                    >[GERMAN] Die Pforzheimer Schmuck- und Uhrenindustrie im
+                    Wandel der Zeit</a
+                  >
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="parent">
+          <nav aria-label="breadcrumb" class="breadcrumb">
+            <ol>
+              <li><a href="https://emilgerlach.com">Home</a></li>
+              <li><a href="https://emilgerlach.com/blog">Blog</a></li>
+              <li aria-current="page">
+                The Historical Reliability of the Bible
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <h1>The Historical Reliability of the Bible</h1>
+      <p class="normal-text">
+        The Bible is a remarkable book. No other work has caused quite as much
+        stir throughout human history - it has been loved and hated, printed and
+        destroyed, spread across the world and banned. For Christians, it is the
+        foundation of their faith. But does a book this old still have anything
+        to say today, nearly 3,500 years after it was first written? <br />
+        How reliable is its transmission? Haven't the texts been distorted over
+        time? This essay takes a closer look at these questions and examines how
+        far the Bible can genuinely be considered historically reliable.
+      </p>
+
+      <div class="sub-heading">
+        <h2 id="one-of-a-kind-book">A One-of-a-Kind Book</h2>
+      </div>
+      <p class="normal-text">
+        Before getting into the question of reliability, it's worth taking a
+        moment to appreciate what the Bible actually is. It consists of 66
+        individual writings produced over roughly 1,600 years, across three
+        different continents, in three different languages. More than 40 authors
+        contributed to it - among them kings and fishermen, philosophers and
+        soldiers, lawyers and poets. In terms of content, it ranges from
+        historical narratives and poetry to parables, laws, letters and sermons.
+        And yet, despite this enormous variety, a recognizable thread runs
+        through the entire work, from Genesis to Revelation. That's striking,
+        especially considering that the authors had no way of coordinating with
+        one another. <br />
+        The Bible also stands apart in terms of its reach and staying power. It
+        is the most printed and best-selling book in the world - in 2024 alone,
+        it sold around 150 million copies. It was the first book ever translated
+        into another language, and today the full text exists in 769 languages,
+        with individual portions available in over 3,800. Written on perishable
+        materials, it has survived thousands of years, banning orders, book
+        burnings and political persecution - from the Roman Empire to Communist
+        regimes. And its reach continues to grow.
+      </p>
+
+      <div class="sub-heading">
+        <h2 id="what-makes-historical-source-reliable">
+          What Makes a Historical Source Reliable?
+        </h2>
+      </div>
+      <p class="normal-text">
+        If we want to seriously ask whether the Bible is historically
+        trustworthy, we need to apply the same scholarly standards used for any
+        other ancient text. This starts with what's known as textual criticism:
+        since the originals of most ancient writings no longer exist, historians
+        assess how many copies have survived, how large the time gap is between
+        the original and the oldest existing copy, and how much the copies
+        differ from one another. Beyond that, other questions matter too: How
+        independently do different sources report the same events? What were the
+        authors' motivations? How much time passed between the events described
+        and when they were written down? And finally: are the accounts supported
+        or contradicted by archaeological finds or non-biblical sources?
+      </p>
+
+      <div class="sub-heading">
+        <h2 id="transmission-new-testament">
+          The Transmission of the New Testament
+        </h2>
+      </div>
+      <p class="normal-text">
+        Judged by these criteria, the New Testament holds up extraordinarily
+        well. No other ancient text comes close in terms of the number of
+        surviving manuscripts: over 24,000 exist in various languages. For
+        comparison, Caesar's Gallic War survives in just ten manuscripts, the
+        earliest of which was copied centuries after the original. In terms of
+        manuscript evidence alone, the New Testament is better attested than
+        three random ancient texts combined. Even Shakespeare's plays from the
+        17th century have a shakier manuscript tradition than the far older New
+        Testament. <br />
+        On top of that, the original text of the New Testament can largely be
+        reconstructed just from quotations by early Church scholars - over a
+        million such quotations have been identified. The earliest surviving
+        copy dates to within roughly a hundred years of the original, which is
+        an impressively short gap by ancient standards. <br />
+        There are, of course, differences between individual manuscripts. These
+        are largely explained by the sheer volume of copies in existence. About
+        three quarters of the variations are spelling mistakes, stylistic
+        differences or minor grammatical changes that don't affect the meaning.
+        A handful of more significant differences remain - the most well-known
+        being the alternate ending of the Gospel of Mark and the story of Jesus
+        and the woman caught in adultery in John's Gospel, which don't appear in
+        all manuscripts. Whether these passages belonged to the original text is
+        still an open question. Overall, though, the transmission of the New
+        Testament's original text is on solid ground.
+      </p>
+
+      <div class="sub-heading">
+        <h2 id="transmission-old-testament">
+          The Transmission of the Old Testament
+        </h2>
+      </div>
+      <p class="normal-text">
+        The situation with the Old Testament is a bit more complicated at first
+        glance. Fewer manuscripts have survived, and for a long time the texts
+        were passed on orally rather than in writing. That said, it's important
+        to understand that oral transmission in the ancient world was far more
+        precise than we might assume today. Jewish scribes known as the
+        Talmudists followed an extremely strict set of rules when copying the
+        sacred scriptures: these governed everything from the type of leather to
+        be used for synagogue scrolls, to the width of lines, the number of
+        letters per line, the color of the ink, and the spacing between letters,
+        lines and books. Every copy had to be made from an authenticated
+        original, with no deviation allowed whatsoever. Scribes would even count
+        the letters in a finished copy to make sure it matched the original
+        exactly - not a single word, letter, stroke or dot could be missing. A
+        completed copy carried the same authority as the original itself, which
+        also explains why older manuscripts were then destroyed, leaving
+        relatively few ancient copies behind. <br />
+        The most significant confirmation of the Old Testament's textual
+        stability came from a chance discovery in 1947. A young shepherd boy,
+        searching for a lost goat, threw a stone into a crack in the cliffs near
+        the Dead Sea - and heard the sound of shattering clay pots. What he had
+        found were the Dead Sea Scrolls: over 40,000 inscribed fragments that
+        allowed large portions of the Old Testament to be reconstructed multiple
+        times over. Among them was a complete scroll of the Book of Isaiah,
+        dated to around 100 BC, which is 95% word-for-word identical to the
+        Bible we have today. The remaining 5% consists of minor copying errors.
+        It's a remarkable testament to just how carefully the text was handed
+        down across the centuries.
+      </p>
+
+      <div class="sub-heading">
+        <h2 id="authors">The Authors and Their Credibility</h2>
+      </div>
+      <p class="normal-text">
+        Beyond the manuscript evidence, it also matters who wrote these texts
+        and how trustworthy they are. The four Gospels were written by Matthew,
+        Mark, Luke and John, largely independently of one another. Some of them
+        had witnessed the events themselves or based their accounts directly on
+        eyewitness reports. <br />
+        The timing of the sources is equally important. The earliest writings in
+        the New Testament - Paul's letters - date from 51 to 62 AD. The Gospels
+        were written between 64 and 100 AD. Since Jesus was crucified between 30
+        and 33 AD, the earliest written source follows the events by only 30 to
+        40 years. By ancient standards, that's practically breaking news - to
+        put it in perspective, the first biography of Alexander the Great was
+        written around 400 years after his death. <br />
+        Because the Gospels were written so soon after the events, other
+        eyewitnesses were still alive when they appeared. Since the early
+        Christians had plenty of enemies, any inaccuracies could easily have
+        been challenged and exposed publicly. The fact that these writings
+        spread so rapidly and became so widely accepted is itself a point in
+        their favor.<br />
+        Another telling sign is the way the authors portray their main
+        characters. Unlike much ancient writing, which tends to glorify its
+        heroes, the Bible is strikingly honest about human failure - from King
+        David in the Old Testament, who despite his importance repeatedly
+        stumbles and falls, to the disciples of Jesus, who come across as
+        doubtful and weak again and again. The account of Jesus' crucifixion is
+        described with unflinching realism, without any attempt to soften it.
+        This kind of self-critical portrayal is highly unusual for ancient
+        texts, and it speaks to the authenticity of the accounts. <br />
+        Several non-Christian ancient authors also mention Jesus or the early
+        Christians, including the Jewish historian Flavius Josephus, the Roman
+        historian Tacitus, and the philosopher Lucian of Samosata. These outside
+        sources at least confirm the historical existence of Jesus.
+      </p>
+
+      <div class="sub-heading">
+        <h2 id="archaeological-evidence">Archaeological Evidence</h2>
+      </div>
+      <p class="normal-text">
+        One of the strongest arguments for the Bible's historical reliability is
+        the archaeological record. So far, no archaeological discovery has
+        disproved a central biblical account. On the contrary, inscriptions,
+        excavated cities and ancient scrolls have repeatedly backed up specific
+        biblical claims about rulers, cities, administrative structures and
+        everyday life. <br />
+        For a long time, critics doubted whether the King Belshazzar mentioned
+        in the Book of Daniel ever existed at all - they argued the correct name
+        should have been Nabonidus. But Egyptian texts later confirmed that
+        Nabonidus was frequently away on travels and had his son Belshazzar
+        stand in for him. The Bible had it right. The Tel Dan Stele, an Aramaic
+        inscription from the 9th century BC discovered in northern Israel in
+        1993/94, contains the phrase "House of David," confirming the existence
+        of a Davidic dynasty. A decorated bone box found in Jerusalem in 1990,
+        inscribed with the name "Joseph, son of Caiaphas," suggests it may have
+        belonged to the very high priest mentioned in the New Testament. And the
+        Pilate Stone, discovered in Caesarea Maritima in 1961, explicitly names
+        Pontius Pilate with his title as prefect of Judea - direct, non-biblical
+        evidence for one of the central figures in the Passion narrative.
+      </p>
+
+      <div class="sub-heading">
+        <h2 id="prophecies">Prophecies and Their Fulfillment</h2>
+      </div>
+      <p class="normal-text">
+        Biblical prophecy is its own chapter - a fascinating one, though it
+        calls for some caution. The Bible contains over 3,000 predictions of
+        various kinds. Some of them have, by historical account, actually come
+        true. The prophet Ezekiel, for instance, predicted centuries in advance
+        that the city of Tyre would be destroyed and its ruins thrown into the
+        sea. That is precisely what happened: Nebuchadnezzar destroyed the city,
+        and Alexander the Great later used its rubble to build a causeway to a
+        nearby island - a causeway that still exists today. Particularly
+        striking are the more than 300 prophecies about the Messiah, which
+        Christians believe were fulfilled in Jesus of Nazareth - including
+        detailed descriptions of his death by crucifixion, a form of execution
+        that hadn't even been invented yet when those words were written. <br />
+        That said, this line of argument has its limits. Many prophecies are
+        worded in ways that leave room for interpretation, and whether they can
+        really be considered fulfilled is often debatable. There's also an
+        important distinction between prophecies fulfilled within the Bible
+        itself and those that can be independently verified through history.
+        Still, no other ancient literature comes anywhere close to containing
+        this many traceable predictions. For Christians, that is a sign that God
+        himself stands behind the Bible's origins.
+      </p>
+
+      <div class="sub-heading">
+        <h2 id="conclusion">Conclusion</h2>
+      </div>
+      <p class="normal-text">
+        The widespread assumption that the Bible is little more than a
+        collection of myths and legends doesn't hold up under serious scrutiny.
+        When the same criteria applied to any other ancient text are used here,
+        the picture becomes clear: the New Testament is extraordinarily well
+        attested - through the sheer number of manuscripts, the early dating of
+        the texts, the high degree of agreement between copies, and confirmation
+        from non-biblical sources. The Old Testament, too, shows remarkable
+        textual stability thanks to the rigorous Jewish scribal tradition and
+        the Dead Sea Scrolls. If the Bible were to be dismissed as historically
+        unreliable, intellectual consistency would demand that most of ancient
+        literature be thrown out along with it. Of course, not every individual
+        story can be proven historically. Some things remain a matter of faith -
+        and for a book that claims to be more than just history, that's entirely
+        fitting. <br />
+        For Christians, historical reliability isn't ultimately the only thing
+        that matters. They read the Bible as the word of God, as a source of
+        personal encouragement and spiritual direction. But it's reassuring to
+        know that this faith doesn't have to stand against historical reason. It
+        can stand on it.
+      </p>
+
+      <div class="sub-heading">
+        <h2 id="sources" class="sources-h2">Sources</h2>
+      </div>
+      <div class="normal-text sources-text">
+        <h3 id="books" class="sources-h3">Books</h3>
+        <ul style="list-style-type: &quot;- &quot;; padding-left: 1em">
+          <li>
+            McDowell, Josh: <em>Evidence That Demands a Verdict</em>. Bielefeld:
+            CLV, 2025 (originally published 2002).
+          </li>
+          <li>
+            Strobel, Lee:
+            <em
+              >The Case for Christ: A Journalist's Personal Investigation of the
+              Evidence for Jesus</em
+            >. Asslar: Gerth Medien, 2016 (originally published 1998).
+          </li>
+          <li>
+            Qureshi, Nabeel:
+            <em
+              >Seeking Allah, Finding Jesus: A Devout Muslim Encounters
+              Christianity</em
+            >. Dillenburg: Christliche Verlagsgesellschaft, 2020 (originally
+            published 2014).
+          </li>
+        </ul>
+
+        <h3 id="websites" class="sources-h3">Websites</h3>
+        <ul style="list-style-type: &quot;- &quot;; padding-left: 1em">
+          <li>
+            <a
+              href="https://bibleproject.visiomedia.org/videos/literarische-stile/"
+              target="_blank"
+              style="word-break: break-all"
+              >https://bibleproject.visiomedia.org/videos/literarische-stile/</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.jesus.ch/themen/glaube/bibel/112499-acht_gruende_fuer_die_glaubwuerdigkeit_der_bibel.html"
+              target="_blank"
+              style="word-break: break-all"
+              >https://www.jesus.ch/themen/glaube/bibel/112499-acht_gruende_fuer_die_glaubwuerdigkeit_der_bibel.html</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.erf.de/lesen/themen/glaube/nur-ein-maerchenbuch/2803-542-5907"
+              target="_blank"
+              style="word-break: break-all"
+              >https://www.erf.de/lesen/themen/glaube/nur-ein-maerchenbuch/2803-542-5907</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.erf.de/lesen/themen/glaube/zweifelhafte-zeitrechnung/2803-542-5906"
+              target="_blank"
+              style="word-break: break-all"
+              >https://www.erf.de/lesen/themen/glaube/zweifelhafte-zeitrechnung/2803-542-5906</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.begruendet-glauben.org/theologie/mederacke-2019-nt-vergleich-antike-quellen/"
+              target="_blank"
+              style="word-break: break-all"
+              >https://www.begruendet-glauben.org/theologie/mederacke-2019-nt-vergleich-antike-quellen/</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.die-bibel.de/der-juedische-kanon"
+              target="_blank"
+              style="word-break: break-all"
+              >https://www.die-bibel.de/der-juedische-kanon</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.die-bibel.de/der-christliche-kanon"
+              target="_blank"
+              style="word-break: break-all"
+              >https://www.die-bibel.de/der-christliche-kanon</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://catecheria.org/wie-glaubwuerdig-ist-die-bibel/"
+              target="_blank"
+              style="word-break: break-all"
+              >https://catecheria.org/wie-glaubwuerdig-ist-die-bibel/</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.jesus.de/glauben-leben/bibel/wer-hat-den-kanon-der-bibel-festgelegt/"
+              target="_blank"
+              style="word-break: break-all"
+              >https://www.jesus.de/glauben-leben/bibel/wer-hat-den-kanon-der-bibel-festgelegt/</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://rogerliebi.ch/start-neu/2-glaubwuerdigkeit-der-bibel/"
+              target="_blank"
+              style="word-break: break-all"
+              >https://rogerliebi.ch/start-neu/2-glaubwuerdigkeit-der-bibel/</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.begruendet-glauben.org/geschichte/kann-ich-der-bibel-trauen/"
+              target="_blank"
+              style="word-break: break-all"
+              >https://www.begruendet-glauben.org/geschichte/kann-ich-der-bibel-trauen/</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.evangelium21.net/media/thema/glaubwuerdigkeit-der-bibel"
+              target="_blank"
+              style="word-break: break-all"
+              >https://www.evangelium21.net/media/thema/glaubwuerdigkeit-der-bibel</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://de.wikipedia.org/wiki/Schriftrollen_vom_Toten_Meer"
+              target="_blank"
+              style="word-break: break-all"
+              >https://de.wikipedia.org/wiki/Schriftrollen_vom_Toten_Meer</a
+            >
+          </li>
+        </ul>
+        (last accessed January 14, 2026)
+      </div>
+
+      <p class="blog-ending">
+        thanks for reading - last changes: April 3, 2026
+      </p>
+    </div>
+
+    <div class="footer">
+      <div class="footer-text">
+        <div class="made-with-love-by collapsible">
+          made with 💙 by emil gerlach<br />
+          <div class="just-someone-who">
+            - just someone who
+            <button class="collapsible-toggle-btn readmore">
+              (click here to read more)
+            </button>
+
+            <div class="content-wrapper">
+              <div class="content">
+                enjoys: music, history, programming, jesus, chess, making
+                things, family and friends,<br />
+                guitars, dampfnudeln (a german food), science, internet,
+                learning new things, human rights, nature, and more...
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-text-things">
+          &copy; 2026 Emil Gerlach<br />
+          <div class="up-arrow-footer">&#x2B61;<a href="#">up</a></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../static/js/main.js" defer></script>
+    <script
+      defer
+      src="https://analytics.umami.is/script.js"
+      data-website-id="2c9e0cab-33e4-49bc-b9b4-7e4daf24e0b0"
+    ></script>
+  </body>
+</html>
